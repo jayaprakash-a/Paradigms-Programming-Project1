@@ -4,7 +4,7 @@
 ## Instructor : Dr. Mrinal Kanti Das
 ## Brief Introduction
 #### Contributors: 
-> Jayaprakash A     111501010
+> Jayaprakash A     111501010  
 > Siddhardha SST    111501028
 > Mettu Aditya      111501016
 > Vinay Ande        111501004
