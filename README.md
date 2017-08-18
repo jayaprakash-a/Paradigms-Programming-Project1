@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # <center>Imperative Paradigm Project </center>
 ## Course : CS 3100 Paradigms of Programming
 
