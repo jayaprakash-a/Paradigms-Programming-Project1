@@ -26,7 +26,6 @@
 ## Who do I talk to?
 
 * Repo Owners : 
-<span style="font-family: Calibri; font-size: 1em;">
 	- JAYAPRAKASH A
     	- Email : 111501010@smail.iitpkd.ac.in
     	- Phone number : +91-9497248284
@@ -39,4 +38,3 @@
 	- VINAY ANDE
     	- Email : 111501010@smail.iitpkd.ac.in
     	- Phone number : +91-9497119050
-</span>
