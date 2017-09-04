@@ -10,7 +10,7 @@
 > Vinay Ande        111501004  
 
 #### Problem Statement
-<span style="font-family: Calibri; font-size: 1em;">Make an application which takes various questions from a file, picked randomly, and puts together a quiz for students. Each quiz can be different and then reads a key to grade the quizzes.</span>
+<span style="font-family: Calibri; font-size: 1em;">Compute distance between two documents.</span>
 
 ## Contents Of The Repository
 
