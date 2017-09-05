@@ -13,6 +13,13 @@
 <span style="font-family: Calibri; font-size: 1em;">Compute distance between two documents.</span>
 
 ## Contents Of The Repository
+* diff.py - The file that calculates the distance between two documents
+* /output  - This folder contains the documentation of the project
+* configure.txt - For configuring the documentation
+* temp.txt - Sample text for testing
+* temp2.txt - Sample text for testing
+* README.md 
+* useless_words.txt - Some file used in the code
 
 ## Compiling Instructions
 
