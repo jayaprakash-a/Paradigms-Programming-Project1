@@ -43,5 +43,5 @@
     	- Email : 111501016@smail.iitpkd.ac.in
     	- Phone number : +91-9497140406
 	- VINAY ANDE
-    	- Email : 111501010@smail.iitpkd.ac.in
+    	- Email : 111501004@smail.iitpkd.ac.in
     	- Phone number : +91-9497119050
