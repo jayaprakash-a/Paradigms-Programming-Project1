@@ -5,11 +5,19 @@
 ## Code that calculates the distance between two files 
 ## based on word frequency.
 
+
+"""@package docstring
+Documentation for this module."""
 from __future__ import print_function
 import math
 import os
+import operator
 
-delimiters = "\'\"/<?>,.:*-+\\=`~!@#$%^&()_ ;"
+# @param delimiter character to differentiate words
+delimiters = "\'\"/<?>,.:*-+\\=`~!@#^&()_ ;"
+
+
+# Dictionary that contains words present in all the files of the folder.
 document_word_count = {}
 
 
@@ -17,7 +25,7 @@ def remove_delimiters(text_line):
 
 	""" Function name : remove_delimiters
 	Input arguments :
-		1. string : Piece of text
+		1. string text_line : Piece of text
 	Purpose : To remove unnecessary characters 
 	Return Value : The string after removing characters.
     """
@@ -29,8 +37,8 @@ def remove_delimiters(text_line):
 def format_text(text_line):
 	""" Function name : format_text
 	Input arguments :
-		1. string : Piece of text
-	Purpose : To format the text by removing delimiters and tariling whitespaces
+		1. string text_line : Piece of text
+	Purpose : To format the text by removing delimiters and trailing whitespaces
 	Return Value : The formatted string.
     """
 	text_line = text_line.rstrip()
@@ -42,9 +50,9 @@ def format_text(text_line):
 def create_dictionary(file_path):
 	""" Function name : create_dictionary
 	Input arguments :
-		1. string : The path to the file to be read.
-		2. dictionary : To save the word frequency
-	Purpose : To create the word frequency table/ vector 
+		1. string file_path : The path to the file to be read.
+	Purpose : To create the word frequency table/ vector
+	Return Value : The dictionary containing the word frequenct vector 
     """
 	my_dictionary ={}
 	text_document = open(file_path, 'r')
@@ -74,8 +82,8 @@ def create_dictionary(file_path):
 def inner_product(document_one_dictionary, document_two_dictionary):
 	""" Function name : inner_product
 	Input arguments :
-		1. dictionary : The dictionary corresponding to document one.
-		2. dictionary : The dictionary corresponding to document two.
+		1. dictionary document_one_dictionary : The dictionary corresponding to document one.
+		2. dictionary document_two_dictionary : The dictionary corresponding to document two.
 	Purpose : To find the inner product of two vectors
 	Return Value : The inner product of two vectors 
     """
@@ -88,6 +96,13 @@ def inner_product(document_one_dictionary, document_two_dictionary):
 	return sum
 
 def calculate_distance(document_one_dictionary, document_two_dictionary):
+	""" Function name : inner_product
+	Input arguments :
+		1. dictionary document_one_dictionary: The dictionary corresponding to document one.
+		2. dictionary document_two_dictionary: The dictionary corresponding to document two.
+	Purpose : To find the distance between two documents
+	Return Value : The cosine distance of two vectors 
+    """
 
 	dot_product = inner_product(document_one_dictionary, document_two_dictionary)
 	document_one_norm = inner_product(document_one_dictionary, document_one_dictionary)
@@ -96,7 +111,12 @@ def calculate_distance(document_one_dictionary, document_two_dictionary):
 	return dot_product / ((document_one_norm * document_two_norm) ** (1/2.0))
 
 def text_formatting(my_dictionary):
-
+	""" Function name : inner_product
+	Input arguments :
+		1. dictionary my_dictionary : The dictionary to be formatted
+	Purpose : To remove the words which have very less importance to the meaning.
+	Return Value : The modified dictionary. 
+    """
 	word_file = open('useless_words.txt', 'r')
 	for word in word_file:
 		word = word.rstrip()
@@ -107,61 +127,67 @@ def text_formatting(my_dictionary):
 
 	return my_dictionary
 
+def ensure_dir(file_path):
+""" Function name : inner_product
+	Input arguments :
+		1. string file_path : The path of the folder.
+	Purpose : To create a directory if it does not exists.
+    """
+	if not os.path.exists(file_path):
+		os.mkdir(file_path)
+
 if __name__ == "__main__":
-    
+	
 
-	folder_path = './testing/'
-
+	folder_path = raw_input("Please input the path to the folder")
 	document_dictionary = {}
+	output_folder_path = raw_input("Please input the path to the output folder")
 
+	ensure_dir(output_folder_path)
+	
+	result_dictionary = {}
 
 	for filename in os.listdir(folder_path):
 		document_dictionary[filename] = create_dictionary(folder_path + filename)
 
 
-	print("Please input the two document files whose distance you wish to compute\n\n")
+	for file_index_one in os.listdir(folder_path):
+		for file_index_two in os.listdir(folder_path):
 
-	print("Please have a look of documents present in the folder.\n\n")
+			document_one_dictionary = {}
 
-	for filename in os.listdir(folder_path):
-		print(filename, end = '\t')
-	print()
+			for key in document_dictionary[file_index_one].keys():
 
-	file_one_path = raw_input("Please input the first filename.\t")
-	file_two_path = raw_input("Please input the second filename.\t")
+				idf_key = math.log(len(document_dictionary) / (document_word_count[key] * 1.0))
+				tf_key = document_dictionary[file_index_one][key]
 
-	file_one_path
+				document_one_dictionary[key] = tf_key * idf_key
 
-	document_one_dictionary = {}
+			document_two_dictionary = {}
 
-	for key in document_dictionary[file_one_path].keys():
+			for key in document_dictionary[file_index_two].keys():
 
-		idf_key = math.log(len(document_dictionary) / (document_word_count[key] * 1.0))
-		tf_key = document_dictionary[file_one_path][key]
+				idf_key = math.log(len(document_dictionary) / (document_word_count[key] * 1.0))
+				tf_key = document_dictionary[file_index_two][key]
 
-		document_one_dictionary[key] = tf_key * idf_key
-
-	document_two_dictionary = {}
-
-	for key in document_dictionary[file_two_path].keys():
-
-		idf_key = math.log(len(document_dictionary) / (document_word_count[key] * 1.0))
-		tf_key = document_dictionary[file_two_path][key]
-
-		document_two_dictionary[key] = tf_key * idf_key
+				document_two_dictionary[key] = tf_key * idf_key
 
 
-	for key in document_one_dictionary.keys():
-		if (document_one_dictionary[key] != document_two_dictionary[key]):
+			result = calculate_distance(document_one_dictionary, document_two_dictionary)
 			
-			print(document_one_dictionary[key], end='  ')
-			print(document_two_dictionary[key])
+			print(file_index_one, end =' ')
+			print(file_index_two)
 
-	print(cmp (document_one_dictionary, document_two_dictionary))
+			result_dictionary[(file_index_one, file_index_two)] = math.acos(result)
 
-	result = calculate_distance(document_one_dictionary, document_two_dictionary)
+	sorted_result = sorted(result_dictionary.items(), key=operator.itemgetter(1))
+	os.chdir(output_folder_path)
 
-	print("The distance between the files ", end='')
-	print(file_one_path, end=' and ')
-	print(file_two_path, end=' (in radians) is ')
-	print(math.acos(result))
+	print("The calculation of distances has finished successfully!!!")
+	result_file_name = raw_input("Please enter the name of file where you wish to save the result.")
+	result_file = open(result_file_name ,'w')
+	for item in sorted_result:
+		print(item[0][0], end=' ',file=result_file)
+		print(item[0][1], end=' ',file=result_file)
+		print(item[1], end='\n',file=result_file)
+	result_file.close()
