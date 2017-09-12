@@ -31,6 +31,20 @@
         </inbodydescription>
         <location file="diff.py" line="21" column="1" bodyfile="diff.py" bodystart="21" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="namespacediff_1ac1dbbabcf481dbdd8253f435c6841b59" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>diff.start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <initializer>= time.clock()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="diff.py" line="141" column="1" bodyfile="diff.py" bodystart="141" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="namespacediff_1adccd64c100d50ed0e87d46c33e8636eb" prot="public" static="no" mutable="no">
         <type></type>
         <definition>diff.folder_path</definition>
@@ -43,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="142" column="1" bodyfile="diff.py" bodystart="142" bodyend="-1"/>
+        <location file="diff.py" line="143" column="1" bodyfile="diff.py" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a7d02a567fcd601900d3960bef0191cea" prot="public" static="no" mutable="no">
         <type>dictionary</type>
@@ -57,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="143" column="1" bodyfile="diff.py" bodystart="143" bodyend="-1"/>
+        <location file="diff.py" line="144" column="1" bodyfile="diff.py" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1aed454348ccff9ceb835a6c22de15fa95" prot="public" static="no" mutable="no">
         <type></type>
@@ -71,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="144" column="1" bodyfile="diff.py" bodystart="144" bodyend="-1"/>
+        <location file="diff.py" line="145" column="1" bodyfile="diff.py" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a08d29f91abd1bc75aa7d8ecb3aa39c91" prot="public" static="no" mutable="no">
         <type>dictionary</type>
@@ -85,13 +99,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="148" column="1" bodyfile="diff.py" bodystart="148" bodyend="-1"/>
+        <location file="diff.py" line="149" column="1" bodyfile="diff.py" bodystart="149" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="namespacediff_1adb8493e93ac22af9aef08d29989bc40d" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="namespacediff_1aca04823d91158ba2b053d46e3550516d" prot="public" static="no" mutable="no">
         <type>dictionary</type>
-        <definition>dictionary diff.document_one_dictionary</definition>
+        <definition>dictionary diff.temp_dictionary</definition>
         <argsstring></argsstring>
-        <name>document_one_dictionary</name>
+        <name>temp_dictionary</name>
         <initializer>= {}</initializer>
         <briefdescription>
         </briefdescription>
@@ -99,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="157" column="1" bodyfile="diff.py" bodystart="157" bodyend="-1"/>
+        <location file="diff.py" line="155" column="1" bodyfile="diff.py" bodystart="155" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a1798972d3d6361a79c16d8470bf3471d" prot="public" static="no" mutable="no">
         <type></type>
@@ -113,49 +127,63 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="161" column="1" bodyfile="diff.py" bodystart="161" bodyend="-1"/>
+        <location file="diff.py" line="159" column="1" bodyfile="diff.py" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1ab860e167471d632882c770f12e87927e" prot="public" static="no" mutable="no">
         <type></type>
         <definition>diff.tf_key</definition>
         <argsstring></argsstring>
         <name>tf_key</name>
-        <initializer>= <ref refid="namespacediff_1a7d02a567fcd601900d3960bef0191cea" kindref="member">document_dictionary</ref>[<ref refid="namespacediff_1ac8ee8a35e457d5004c0f85b0383faf26" kindref="member">file_index_one</ref>][key]</initializer>
+        <initializer>= <ref refid="namespacediff_1a7d02a567fcd601900d3960bef0191cea" kindref="member">document_dictionary</ref>[filename][key]</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="162" column="1" bodyfile="diff.py" bodystart="162" bodyend="-1"/>
+        <location file="diff.py" line="160" column="1" bodyfile="diff.py" bodystart="160" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="namespacediff_1ad928e1eb5cb7ebde52f495bf99c78a3b" prot="public" static="no" mutable="no">
-        <type>dictionary</type>
-        <definition>dictionary diff.document_two_dictionary</definition>
+      <memberdef kind="variable" id="namespacediff_1aa4da046a613de2dafe03d105bca31694" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>diff.document_one_dictionary</definition>
+        <argsstring></argsstring>
+        <name>document_one_dictionary</name>
+        <initializer>= <ref refid="namespacediff_1a7d02a567fcd601900d3960bef0191cea" kindref="member">document_dictionary</ref>[<ref refid="namespacediff_1ac8ee8a35e457d5004c0f85b0383faf26" kindref="member">file_index_one</ref>]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="diff.py" line="169" column="1" bodyfile="diff.py" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacediff_1a00ac707250a54a82a970c2bb2acf736a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>diff.document_two_dictionary</definition>
         <argsstring></argsstring>
         <name>document_two_dictionary</name>
-        <initializer>= {}</initializer>
+        <initializer>= <ref refid="namespacediff_1a7d02a567fcd601900d3960bef0191cea" kindref="member">document_dictionary</ref>[file_index_two]</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="166" column="1" bodyfile="diff.py" bodystart="166" bodyend="-1"/>
+        <location file="diff.py" line="171" column="1" bodyfile="diff.py" bodystart="171" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a5df2e8041c6fff30558b49edee35438a" prot="public" static="no" mutable="no">
         <type></type>
         <definition>diff.result</definition>
         <argsstring></argsstring>
         <name>result</name>
-        <initializer>= <ref refid="namespacediff_1a0b1fc82894743728455b31d3e9ec3671" kindref="member">calculate_distance</ref>(<ref refid="namespacediff_1adb8493e93ac22af9aef08d29989bc40d" kindref="member">document_one_dictionary</ref>, <ref refid="namespacediff_1ad928e1eb5cb7ebde52f495bf99c78a3b" kindref="member">document_two_dictionary</ref>)</initializer>
+        <initializer>= <ref refid="namespacediff_1a0b1fc82894743728455b31d3e9ec3671" kindref="member">calculate_distance</ref>(<ref refid="namespacediff_1aa4da046a613de2dafe03d105bca31694" kindref="member">document_one_dictionary</ref>, <ref refid="namespacediff_1a00ac707250a54a82a970c2bb2acf736a" kindref="member">document_two_dictionary</ref>)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="176" column="1" bodyfile="diff.py" bodystart="176" bodyend="-1"/>
+        <location file="diff.py" line="173" column="1" bodyfile="diff.py" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1ac8ee8a35e457d5004c0f85b0383faf26" prot="public" static="no" mutable="no">
         <type></type>
@@ -168,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="178" column="1" bodyfile="diff.py" bodystart="178" bodyend="-1"/>
+        <location file="diff.py" line="175" column="1" bodyfile="diff.py" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a2839fdf2e0df35c347f0649098c5ecdc" prot="public" static="no" mutable="no">
         <type></type>
@@ -181,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="178" column="1" bodyfile="diff.py" bodystart="178" bodyend="-1"/>
+        <location file="diff.py" line="175" column="1" bodyfile="diff.py" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a3b4c2771da02846b61219801d8016b40" prot="public" static="no" mutable="no">
         <type></type>
@@ -195,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="183" column="1" bodyfile="diff.py" bodystart="183" bodyend="-1"/>
+        <location file="diff.py" line="181" column="1" bodyfile="diff.py" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a15a863df81a6f3099b088f9f52808389" prot="public" static="no" mutable="no">
         <type></type>
@@ -209,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="187" column="1" bodyfile="diff.py" bodystart="187" bodyend="-1"/>
+        <location file="diff.py" line="185" column="1" bodyfile="diff.py" bodystart="185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1aa1be62f435ce37ca93ba61d4ad88c0c9" prot="public" static="no" mutable="no">
         <type></type>
@@ -223,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="188" column="1" bodyfile="diff.py" bodystart="188" bodyend="-1"/>
+        <location file="diff.py" line="186" column="1" bodyfile="diff.py" bodystart="186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a3759e132757b6fdecd117a665d6158ab" prot="public" static="no" mutable="no">
         <type></type>
@@ -236,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="190" column="1" bodyfile="diff.py" bodystart="190" bodyend="-1"/>
+        <location file="diff.py" line="188" column="1" bodyfile="diff.py" bodystart="188" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -312,11 +340,11 @@ Return Value : The dictionary containing the word frequenct vector
         <argsstring>(document_one_dictionary, document_two_dictionary)</argsstring>
         <name>inner_product</name>
         <param>
-          <type><ref refid="namespacediff_1adb8493e93ac22af9aef08d29989bc40d" kindref="member">document_one_dictionary</ref></type>
+          <type><ref refid="namespacediff_1aa4da046a613de2dafe03d105bca31694" kindref="member">document_one_dictionary</ref></type>
           <defname>document_one_dictionary</defname>
         </param>
         <param>
-          <type><ref refid="namespacediff_1ad928e1eb5cb7ebde52f495bf99c78a3b" kindref="member">document_two_dictionary</ref></type>
+          <type><ref refid="namespacediff_1a00ac707250a54a82a970c2bb2acf736a" kindref="member">document_two_dictionary</ref></type>
           <defname>document_two_dictionary</defname>
         </param>
         <briefdescription>
@@ -339,11 +367,11 @@ Return Value : The inner product of two vectors
         <argsstring>(document_one_dictionary, document_two_dictionary)</argsstring>
         <name>calculate_distance</name>
         <param>
-          <type><ref refid="namespacediff_1adb8493e93ac22af9aef08d29989bc40d" kindref="member">document_one_dictionary</ref></type>
+          <type><ref refid="namespacediff_1aa4da046a613de2dafe03d105bca31694" kindref="member">document_one_dictionary</ref></type>
           <defname>document_one_dictionary</defname>
         </param>
         <param>
-          <type><ref refid="namespacediff_1ad928e1eb5cb7ebde52f495bf99c78a3b" kindref="member">document_two_dictionary</ref></type>
+          <type><ref refid="namespacediff_1a00ac707250a54a82a970c2bb2acf736a" kindref="member">document_two_dictionary</ref></type>
           <defname>document_two_dictionary</defname>
         </param>
         <briefdescription>
@@ -397,8 +425,7 @@ Return Value : The modified dictionary.
 <para><verbatim>Function name : inner_product
 Input arguments :
     1. string file_path : The path of the folder.
-Purpose : To create a directory if it does not exists.
-</verbatim> </para>        </detaileddescription>
+Purpose : To create a directory if it does not exists.</verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="diff.py" line="130" column="1" bodyfile="diff.py" bodystart="130" bodyend="138"/>

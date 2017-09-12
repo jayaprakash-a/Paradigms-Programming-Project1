@@ -9,8 +9,8 @@ var diff_8py =
     [ "text_formatting", "diff_8py.html#aa2e19dbdbb5368eafd04b0cfe58c59a9", null ],
     [ "delimiters", "diff_8py.html#a46e2544bf0f797b8d42f4985d4b9bf0a", null ],
     [ "document_dictionary", "diff_8py.html#a7d02a567fcd601900d3960bef0191cea", null ],
-    [ "document_one_dictionary", "diff_8py.html#adb8493e93ac22af9aef08d29989bc40d", null ],
-    [ "document_two_dictionary", "diff_8py.html#ad928e1eb5cb7ebde52f495bf99c78a3b", null ],
+    [ "document_one_dictionary", "diff_8py.html#aa4da046a613de2dafe03d105bca31694", null ],
+    [ "document_two_dictionary", "diff_8py.html#a00ac707250a54a82a970c2bb2acf736a", null ],
     [ "document_word_count", "diff_8py.html#af16edaaafe4787892cb925870fd0d108", null ],
     [ "end", "diff_8py.html#a2839fdf2e0df35c347f0649098c5ecdc", null ],
     [ "file", "diff_8py.html#a3759e132757b6fdecd117a665d6158ab", null ],
@@ -23,5 +23,7 @@ var diff_8py =
     [ "result_file", "diff_8py.html#aa1be62f435ce37ca93ba61d4ad88c0c9", null ],
     [ "result_file_name", "diff_8py.html#a15a863df81a6f3099b088f9f52808389", null ],
     [ "sorted_result", "diff_8py.html#a3b4c2771da02846b61219801d8016b40", null ],
+    [ "start", "diff_8py.html#ac1dbbabcf481dbdd8253f435c6841b59", null ],
+    [ "temp_dictionary", "diff_8py.html#aca04823d91158ba2b053d46e3550516d", null ],
     [ "tf_key", "diff_8py.html#ab860e167471d632882c770f12e87927e", null ]
 ];

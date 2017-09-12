@@ -1,4 +1,4 @@
-.TH "diff" 3 "Tue Sep 12 2017" "Version 1" "MyProject" \" -*- nroff -*-
+.TH "diff" 3 "Wed Sep 13 2017" "Version 1" "MyProject" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -41,6 +41,9 @@ diff \-
 .RI "dictionary \fBdocument_word_count\fP = {}"
 .br
 .ti -1c
+.RI "\fBstart\fP = time\&.clock()"
+.br
+.ti -1c
 .RI "\fBfolder_path\fP = raw_input('Please input the path to the folder')"
 .br
 .ti -1c
@@ -53,16 +56,19 @@ diff \-
 .RI "dictionary \fBresult_dictionary\fP = {}"
 .br
 .ti -1c
-.RI "dictionary \fBdocument_one_dictionary\fP = {}"
+.RI "dictionary \fBtemp_dictionary\fP = {}"
 .br
 .ti -1c
 .RI "\fBidf_key\fP = math\&.log(len(\fBdocument_dictionary\fP) / (\fBdocument_word_count\fP[key] * 1\&.0))"
 .br
 .ti -1c
-.RI "\fBtf_key\fP = \fBdocument_dictionary\fP[\fBfile_index_one\fP][key]"
+.RI "\fBtf_key\fP = \fBdocument_dictionary\fP[filename][key]"
 .br
 .ti -1c
-.RI "dictionary \fBdocument_two_dictionary\fP = {}"
+.RI "\fBdocument_one_dictionary\fP = \fBdocument_dictionary\fP[\fBfile_index_one\fP]"
+.br
+.ti -1c
+.RI "\fBdocument_two_dictionary\fP = \fBdocument_dictionary\fP[file_index_two]"
 .br
 .ti -1c
 .RI "\fBresult\fP = \fBcalculate_distance\fP(\fBdocument_one_dictionary\fP, \fBdocument_two_dictionary\fP)"
@@ -127,7 +133,6 @@ Function name : inner_product
 Input arguments :
     1. string file_path : The path of the folder.
 Purpose : To create a directory if it does not exists.
-
 .fi
 .PP
  
@@ -203,15 +208,15 @@ Definition at line 17 of file diff\&.py\&.
 .SS "dictionary diff\&.document_dictionary = {}"
 
 .PP
-Definition at line 143 of file diff\&.py\&.
-.SS "dictionary diff\&.document_one_dictionary = {}"
+Definition at line 144 of file diff\&.py\&.
+.SS "diff\&.document_one_dictionary = \fBdocument_dictionary\fP[\fBfile_index_one\fP]"
 
 .PP
-Definition at line 157 of file diff\&.py\&.
-.SS "dictionary diff\&.document_two_dictionary = {}"
+Definition at line 169 of file diff\&.py\&.
+.SS "diff\&.document_two_dictionary = \fBdocument_dictionary\fP[file_index_two]"
 
 .PP
-Definition at line 166 of file diff\&.py\&.
+Definition at line 171 of file diff\&.py\&.
 .SS "dictionary diff\&.document_word_count = {}"
 
 .PP
@@ -219,51 +224,59 @@ Definition at line 21 of file diff\&.py\&.
 .SS "diff\&.end"
 
 .PP
-Definition at line 178 of file diff\&.py\&.
+Definition at line 175 of file diff\&.py\&.
 .SS "diff\&.file"
 
 .PP
-Definition at line 190 of file diff\&.py\&.
+Definition at line 188 of file diff\&.py\&.
 .SS "diff\&.file_index_one"
 
 .PP
-Definition at line 178 of file diff\&.py\&.
+Definition at line 175 of file diff\&.py\&.
 .SS "diff\&.folder_path = raw_input('Please input the path to the folder')"
 
 .PP
-Definition at line 142 of file diff\&.py\&.
+Definition at line 143 of file diff\&.py\&.
 .SS "diff\&.idf_key = math\&.log(len(\fBdocument_dictionary\fP) / (\fBdocument_word_count\fP[key] * 1\&.0))"
 
 .PP
-Definition at line 161 of file diff\&.py\&.
+Definition at line 159 of file diff\&.py\&.
 .SS "diff\&.output_folder_path = raw_input('Please input the path to the output folder')"
 
 .PP
-Definition at line 144 of file diff\&.py\&.
+Definition at line 145 of file diff\&.py\&.
 .SS "diff\&.result = \fBcalculate_distance\fP(\fBdocument_one_dictionary\fP, \fBdocument_two_dictionary\fP)"
 
 .PP
-Definition at line 176 of file diff\&.py\&.
+Definition at line 173 of file diff\&.py\&.
 .SS "dictionary diff\&.result_dictionary = {}"
 
 .PP
-Definition at line 148 of file diff\&.py\&.
+Definition at line 149 of file diff\&.py\&.
 .SS "diff\&.result_file = open(\fBresult_file_name\fP ,'w')"
 
 .PP
-Definition at line 188 of file diff\&.py\&.
+Definition at line 186 of file diff\&.py\&.
 .SS "diff\&.result_file_name = raw_input('Please enter the name of \fBfile\fP where you wish to save the result\&.')"
 
 .PP
-Definition at line 187 of file diff\&.py\&.
+Definition at line 185 of file diff\&.py\&.
 .SS "diff\&.sorted_result = sorted(result_dictionary\&.items(), key=operator\&.itemgetter(1))"
 
 .PP
-Definition at line 183 of file diff\&.py\&.
-.SS "diff\&.tf_key = \fBdocument_dictionary\fP[\fBfile_index_one\fP][key]"
+Definition at line 181 of file diff\&.py\&.
+.SS "diff\&.start = time\&.clock()"
 
 .PP
-Definition at line 162 of file diff\&.py\&.
+Definition at line 141 of file diff\&.py\&.
+.SS "dictionary diff\&.temp_dictionary = {}"
+
+.PP
+Definition at line 155 of file diff\&.py\&.
+.SS "diff\&.tf_key = \fBdocument_dictionary\fP[filename][key]"
+
+.PP
+Definition at line 160 of file diff\&.py\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for MyProject from the source code\&.

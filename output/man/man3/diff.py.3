@@ -1,4 +1,4 @@
-.TH "diff.py" 3 "Tue Sep 12 2017" "Version 1" "MyProject" \" -*- nroff -*-
+.TH "diff.py" 3 "Wed Sep 13 2017" "Version 1" "MyProject" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -48,6 +48,9 @@ diff.py \-
 .RI "dictionary \fBdiff\&.document_word_count\fP = {}"
 .br
 .ti -1c
+.RI "\fBdiff\&.start\fP = time\&.clock()"
+.br
+.ti -1c
 .RI "\fBdiff\&.folder_path\fP = raw_input('Please input the path to the folder')"
 .br
 .ti -1c
@@ -60,16 +63,19 @@ diff.py \-
 .RI "dictionary \fBdiff\&.result_dictionary\fP = {}"
 .br
 .ti -1c
-.RI "dictionary \fBdiff\&.document_one_dictionary\fP = {}"
+.RI "dictionary \fBdiff\&.temp_dictionary\fP = {}"
 .br
 .ti -1c
 .RI "\fBdiff\&.idf_key\fP = math\&.log(len(document_dictionary) / (document_word_count[key] * 1\&.0))"
 .br
 .ti -1c
-.RI "\fBdiff\&.tf_key\fP = document_dictionary[file_index_one][key]"
+.RI "\fBdiff\&.tf_key\fP = document_dictionary[filename][key]"
 .br
 .ti -1c
-.RI "dictionary \fBdiff\&.document_two_dictionary\fP = {}"
+.RI "\fBdiff\&.document_one_dictionary\fP = document_dictionary[file_index_one]"
+.br
+.ti -1c
+.RI "\fBdiff\&.document_two_dictionary\fP = document_dictionary[file_index_two]"
 .br
 .ti -1c
 .RI "\fBdiff\&.result\fP = calculate_distance(document_one_dictionary, document_two_dictionary)"

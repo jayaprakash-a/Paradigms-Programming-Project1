@@ -102,6 +102,8 @@ Variables</h2></td></tr>
 <tr class="separator:a46e2544bf0f797b8d42f4985d4b9bf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af16edaaafe4787892cb925870fd0d108"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#af16edaaafe4787892cb925870fd0d108">diff.document_word_count</a> = {}</td></tr>
 <tr class="separator:af16edaaafe4787892cb925870fd0d108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1dbbabcf481dbdd8253f435c6841b59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#ac1dbbabcf481dbdd8253f435c6841b59">diff.start</a> = time.clock()</td></tr>
+<tr class="separator:ac1dbbabcf481dbdd8253f435c6841b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adccd64c100d50ed0e87d46c33e8636eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#adccd64c100d50ed0e87d46c33e8636eb">diff.folder_path</a> = raw_input(&quot;Please input the path to the folder&quot;)</td></tr>
 <tr class="separator:adccd64c100d50ed0e87d46c33e8636eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d02a567fcd601900d3960bef0191cea"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#a7d02a567fcd601900d3960bef0191cea">diff.document_dictionary</a> = {}</td></tr>
@@ -110,14 +112,16 @@ Variables</h2></td></tr>
 <tr class="separator:aed454348ccff9ceb835a6c22de15fa95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d29f91abd1bc75aa7d8ecb3aa39c91"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#a08d29f91abd1bc75aa7d8ecb3aa39c91">diff.result_dictionary</a> = {}</td></tr>
 <tr class="separator:a08d29f91abd1bc75aa7d8ecb3aa39c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb8493e93ac22af9aef08d29989bc40d"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#adb8493e93ac22af9aef08d29989bc40d">diff.document_one_dictionary</a> = {}</td></tr>
-<tr class="separator:adb8493e93ac22af9aef08d29989bc40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca04823d91158ba2b053d46e3550516d"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#aca04823d91158ba2b053d46e3550516d">diff.temp_dictionary</a> = {}</td></tr>
+<tr class="separator:aca04823d91158ba2b053d46e3550516d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1798972d3d6361a79c16d8470bf3471d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#a1798972d3d6361a79c16d8470bf3471d">diff.idf_key</a> = math.log(len(document_dictionary) / (document_word_count[key] * 1.0))</td></tr>
 <tr class="separator:a1798972d3d6361a79c16d8470bf3471d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab860e167471d632882c770f12e87927e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#ab860e167471d632882c770f12e87927e">diff.tf_key</a> = document_dictionary[file_index_one][key]</td></tr>
+<tr class="memitem:ab860e167471d632882c770f12e87927e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#ab860e167471d632882c770f12e87927e">diff.tf_key</a> = document_dictionary[filename][key]</td></tr>
 <tr class="separator:ab860e167471d632882c770f12e87927e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad928e1eb5cb7ebde52f495bf99c78a3b"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#ad928e1eb5cb7ebde52f495bf99c78a3b">diff.document_two_dictionary</a> = {}</td></tr>
-<tr class="separator:ad928e1eb5cb7ebde52f495bf99c78a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4da046a613de2dafe03d105bca31694"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#aa4da046a613de2dafe03d105bca31694">diff.document_one_dictionary</a> = document_dictionary[file_index_one]</td></tr>
+<tr class="separator:aa4da046a613de2dafe03d105bca31694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ac707250a54a82a970c2bb2acf736a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#a00ac707250a54a82a970c2bb2acf736a">diff.document_two_dictionary</a> = document_dictionary[file_index_two]</td></tr>
+<tr class="separator:a00ac707250a54a82a970c2bb2acf736a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df2e8041c6fff30558b49edee35438a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#a5df2e8041c6fff30558b49edee35438a">diff.result</a> = calculate_distance(document_one_dictionary, document_two_dictionary)</td></tr>
 <tr class="separator:a5df2e8041c6fff30558b49edee35438a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8ee8a35e457d5004c0f85b0383faf26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacediff.html#ac8ee8a35e457d5004c0f85b0383faf26">diff.file_index_one</a></td></tr>

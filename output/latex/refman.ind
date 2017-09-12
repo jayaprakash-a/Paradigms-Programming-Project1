@@ -32,6 +32,8 @@
     \subitem {result\+\_\+file}, \hyperpage{8}
     \subitem {result\+\_\+file\+\_\+name}, \hyperpage{8}
     \subitem {sorted\+\_\+result}, \hyperpage{8}
+    \subitem {start}, \hyperpage{8}
+    \subitem {temp\+\_\+dictionary}, \hyperpage{8}
     \subitem {text\+\_\+formatting}, \hyperpage{7}
     \subitem {tf\+\_\+key}, \hyperpage{8}
   \item {diff.\+py}, \hyperpage{9}
@@ -91,9 +93,13 @@
 
   \item {sorted\+\_\+result}
     \subitem {diff}, \hyperpage{8}
+  \item {start}
+    \subitem {diff}, \hyperpage{8}
 
   \indexspace
 
+  \item {temp\+\_\+dictionary}
+    \subitem {diff}, \hyperpage{8}
   \item {text\+\_\+formatting}
     \subitem {diff}, \hyperpage{7}
   \item {tf\+\_\+key}

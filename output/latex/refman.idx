@@ -45,6 +45,10 @@
 \indexentry{result\+\_\+file\+\_\+name@{result\+\_\+file\+\_\+name}!diff@{diff}|hyperpage}{8}
 \indexentry{diff@{diff}!sorted\+\_\+result@{sorted\+\_\+result}|hyperpage}{8}
 \indexentry{sorted\+\_\+result@{sorted\+\_\+result}!diff@{diff}|hyperpage}{8}
+\indexentry{diff@{diff}!start@{start}|hyperpage}{8}
+\indexentry{start@{start}!diff@{diff}|hyperpage}{8}
+\indexentry{diff@{diff}!temp\+\_\+dictionary@{temp\+\_\+dictionary}|hyperpage}{8}
+\indexentry{temp\+\_\+dictionary@{temp\+\_\+dictionary}!diff@{diff}|hyperpage}{8}
 \indexentry{diff@{diff}!tf\+\_\+key@{tf\+\_\+key}|hyperpage}{8}
 \indexentry{tf\+\_\+key@{tf\+\_\+key}!diff@{diff}|hyperpage}{8}
 \indexentry{diff.\+py@{diff.\+py}|hyperpage}{9}
