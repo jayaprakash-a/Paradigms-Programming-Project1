@@ -1,0 +1,150 @@
+\ProvidesPackage{mystyle}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+% \usepackage{censor}
+% \censorruledepth=-.2ex
+% \censorruleheight=.1ex
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.PNG}
+\usepackage[backref=page]{hyperref}
+\renewcommand{\sectionautorefname}{\S}
+\renewcommand{\subsectionautorefname}{\S}
+\renewcommand{\subsubsectionautorefname}{\S}
+\usepackage{color}
+\definecolor{dark_blue}{RGB}{0,0,205}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=dark_blue,
+	pdftitle={Machine learning Assignment 1},
+	bookmarks=true,
+	pagebackref=false,
+}
+\urlstyle{same}
+\usepackage{float}
+
+%\textwidth=1.6cm \textheight=2.45cm
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+
+
+\usepackage[section]{algorithm}
+\usepackage{algpseudocode}
+\renewcommand\algorithmicindent{2em}
+\renewcommand{\alglinenumber}[1]{\small #1.}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\renewcommand{\algorithmiccomment}[1]{\bgroup\hfill//~#1\egroup}
+\renewcommand{\algorithmicforall}{\textbf{for each}}
+\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}%
+
+\usepackage{caption}
+\captionsetup[figure]{font=small,labelfont=small,skip=1pt}
+\usepackage{subcaption}
+
+\usepackage{multirow}
+
+\usepackage[toc,page]{appendix}
+\newcommand{\tab}[0]{\hspace{1cm}}
+
+\def\baselinestretch{1.15}\selectfont
+
+%\usepackage{fontspec}
+% Calibri
+% \setromanfont[
+% Path = ./fonts/calibri/,
+% BoldFont=calibri_b.ttf,
+% ItalicFont=calibri_i.ttf,
+% BoldItalicFont=calibri_b_i.ttf,
+% ]{calibri.ttf}
+% \setromanfont[
+% Path = fonts/cambria/,
+% BoldFont=cambria_b.ttf,
+% ItalicFont=cambria_i.ttf,
+% BoldItalicFont=cambria_b_i.ttf,
+% ]{cambria.ttf}
+% \setromanfont[
+% Path = fonts/liberation_serif/,
+% BoldFont=LiberationSerif-Bold.ttf,
+% ItalicFont=LiberationSerif-Italic.ttf,
+% BoldItalicFont=LiberationSerif-BoldItalic.ttf,
+% ]{LiberationSerif-Regular.ttf}
+% \setromanfont[
+% Path = fonts/charter_bt/,
+% BoldFont=CHARTRB.TTF,
+% ItalicFont=CHARTRI.TTF,
+% BoldItalicFont=CHARTRBI.TTF,
+% ]{CHARTRN.TTF}
+% Arial
+% \setsansfont[
+% BoldFont=arialbd.ttf,
+% ItalicFont=ariali.ttf,
+% BoldItalicFont=arialbi.ttf
+% ]{arial.ttf}
+% Courier New
+% \setmonofont[Scale=0.90,
+% BoldFont=courbd.ttf,
+% ItalicFont=couri.ttf,
+% BoldItalicFont=courbi.ttf,
+% Color={0019D4}
+% ]{cour.ttf}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\leftmark}
+\rhead{\thepage}
+\lfoot{Indian Institute of Technology, Palakkad}
+\rfoot{22 August 2017}
+\cfoot{}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+%this alters "before" spacing (the second length argument) to 0
+\titlespacing*{\chapter}{0pt}{-25pt}{40pt}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\usepackage[export]{adjustbox}
+
+% For Bitcharter font in text and math
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[T1]{fontenc}
+% For depth in numbering level of sections
+\setcounter{secnumdepth}{4}
+% For depth in table of contents
+\setcounter{tocdepth}{4}
+
+\usepackage{soul}
+\newcommand{\signaturerule}{\rule{15em}{.6pt}}
+\newcommand{\wideunderline}[2][2em]{%
+  \underline{\makebox[\ifdim\width>#1\width\else#1\fi]{#2}}%
+}
+
+\usepackage[final]{pdfpages}
+
+\usepackage[a4,frame,center]{crop}
+\definecolor{codegray}{gray}{0.9}
+\newcommand{\code}[1]{\colorbox{codegray}{\texttt{#1}}}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{eso-pic}
+
+\usepackage{lipsum}
+
+%\AddToShipoutPictureBG{%
+%	\begin{tikzpicture}[overlay,remember picture]
+%	\draw[line width=2pt]
+%	($ (current page.north west) + (1cm,-1.12cm) $)
+%	rectangle
+%	($ (current page.south east) + (-1cm,1cm) $);
+%	\end{tikzpicture}
+%}
+
+
