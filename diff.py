@@ -12,7 +12,7 @@ from __future__ import print_function
 import math
 import os
 import operator
-
+import time
 # @param delimiter character to differentiate words
 delimiters = "\'\"/<?>,.:*-+\\=`~!@#^&()_ ;"
 
@@ -128,16 +128,17 @@ def text_formatting(my_dictionary):
 	return my_dictionary
 
 def ensure_dir(file_path):
-""" Function name : inner_product
+	""" Function name : inner_product
 	Input arguments :
 		1. string file_path : The path of the folder.
-	Purpose : To create a directory if it does not exists.
-    """
+	Purpose : To create a directory if it does not exists."""
+
 	if not os.path.exists(file_path):
 		os.mkdir(file_path)
 
 if __name__ == "__main__":
 	
+	start = time.clock()
 
 	folder_path = raw_input("Please input the path to the folder")
 	document_dictionary = {}
@@ -147,31 +148,32 @@ if __name__ == "__main__":
 	
 	result_dictionary = {}
 
-	for filename in os.listdir(folder_path):
+	for filename in os.listdir(folder_path):# Create the word vector for each and every file in the folder
 		document_dictionary[filename] = create_dictionary(folder_path + filename)
 
+	for filename in os.listdir(folder_path):# Calculating the tf-idf weights
+		temp_dictionary = {}
 
-	for file_index_one in os.listdir(folder_path):
-		for file_index_two in os.listdir(folder_path):
+		for key in document_dictionary[filename].keys():
 
-			document_one_dictionary = {}
+			idf_key = math.log(len(document_dictionary) / (document_word_count[key] * 1.0))
+			tf_key = document_dictionary[filename][key]
 
-			for key in document_dictionary[file_index_one].keys():
+			temp_dictionary[key] = tf_key * idf_key		
 
-				idf_key = math.log(len(document_dictionary) / (document_word_count[key] * 1.0))
-				tf_key = document_dictionary[file_index_one][key]
+		document_dictionary[filename] = temp_dictionary
 
-				document_one_dictionary[key] = tf_key * idf_key
+	file_index = os.listdir(folder_path)
 
-			document_two_dictionary = {}
+	for index_one in range(len(file_index)):
+		for index_two in range(index_one + 1, len(file_index)):
+			
+			file_index_one = file_index[index_one]
+			file_index_two = file_index[index_two]
+			# Take any two files compute their cosine distance
+			document_one_dictionary = document_dictionary[file_index_one]
 
-			for key in document_dictionary[file_index_two].keys():
-
-				idf_key = math.log(len(document_dictionary) / (document_word_count[key] * 1.0))
-				tf_key = document_dictionary[file_index_two][key]
-
-				document_two_dictionary[key] = tf_key * idf_key
-
+			document_two_dictionary = document_dictionary[file_index_two]
 
 			result = calculate_distance(document_one_dictionary, document_two_dictionary)
 			
@@ -180,6 +182,7 @@ if __name__ == "__main__":
 
 			result_dictionary[(file_index_one, file_index_two)] = math.acos(result)
 
+	# Calculating the result and save it to the output f
 	sorted_result = sorted(result_dictionary.items(), key=operator.itemgetter(1))
 	os.chdir(output_folder_path)
 
@@ -191,3 +194,8 @@ if __name__ == "__main__":
 		print(item[0][1], end=' ',file=result_file)
 		print(item[1], end='\n',file=result_file)
 	result_file.close()
+
+	print("The result has been logged to the file successfully!!!")
+
+	print("The total time taken is", end=' ')
+	print(time.clock() - start)
