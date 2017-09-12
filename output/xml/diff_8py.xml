@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="diff_8py" kind="file" language="Python">
+    <compoundname>diff.py</compoundname>
+    <innernamespace refid="namespacediff">diff</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacediff" refkind="compound"><highlight class="comment">#<sp/>Authors:<sp/>Jayaprakash<sp/>A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Testers:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Code<sp/>that<sp/>calculates<sp/>the<sp/>distance<sp/>between<sp/>two<sp/>files<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">##<sp/>based<sp/>on<sp/>word<sp/>frequency.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;@package<sp/>docstring</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral">Documentation<sp/>for<sp/>this<sp/>module.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_function</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>math</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>operator</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">#<sp/>@param<sp/>delimiter<sp/>character<sp/>to<sp/>differentiate<sp/>words</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="namespacediff_1a46e2544bf0f797b8d42f4985d4b9bf0a" refkind="member"><highlight class="normal">delimiters<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\&apos;\&quot;/&lt;?&gt;,.:*-+\\=`~!@#^&amp;()_<sp/>;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Dictionary<sp/>that<sp/>contains<sp/>words<sp/>present<sp/>in<sp/>all<sp/>the<sp/>files<sp/>of<sp/>the<sp/>folder.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespacediff_1af16edaaafe4787892cb925870fd0d108" refkind="member"><highlight class="normal">document_word_count<sp/>=<sp/>{}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespacediff_1af60a451d448d916b5326b02f0c96147e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacediff_1af60a451d448d916b5326b02f0c96147e" kindref="member">remove_delimiters</ref>(text_line):</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>Function<sp/>name<sp/>:<sp/>remove_delimiters</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Input<sp/>arguments<sp/>:</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>string<sp/>text_line<sp/>:<sp/>Piece<sp/>of<sp/>text</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Purpose<sp/>:<sp/>To<sp/>remove<sp/>unnecessary<sp/>characters<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>Value<sp/>:<sp/>The<sp/>string<sp/>after<sp/>removing<sp/>characters.</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>ch<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>delimiters:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text_line<sp/>=<sp/>text_line.replace(ch,<sp/></highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>text_line</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="namespacediff_1a17722e85e83540a4710fa571f274e460" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacediff_1a17722e85e83540a4710fa571f274e460" kindref="member">format_text</ref>(text_line):</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>Function<sp/>name<sp/>:<sp/>format_text</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Input<sp/>arguments<sp/>:</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>string<sp/>text_line<sp/>:<sp/>Piece<sp/>of<sp/>text</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Purpose<sp/>:<sp/>To<sp/>format<sp/>the<sp/>text<sp/>by<sp/>removing<sp/>delimiters<sp/>and<sp/>trailing<sp/>whitespaces</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>Value<sp/>:<sp/>The<sp/>formatted<sp/>string.</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>text_line<sp/>=<sp/>text_line.rstrip()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>text_line<sp/>=<sp/><ref refid="namespacediff_1af60a451d448d916b5326b02f0c96147e" kindref="member">remove_delimiters</ref>(text_line)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>text_line.split(</highlight><highlight class="stringliteral">&apos;;&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="namespacediff_1af7396fb95b2a175d067c1c73c75c49f6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacediff_1af7396fb95b2a175d067c1c73c75c49f6" kindref="member">create_dictionary</ref>(file_path):</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>Function<sp/>name<sp/>:<sp/>create_dictionary</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Input<sp/>arguments<sp/>:</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>string<sp/>file_path<sp/>:<sp/>The<sp/>path<sp/>to<sp/>the<sp/>file<sp/>to<sp/>be<sp/>read.</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Purpose<sp/>:<sp/>To<sp/>create<sp/>the<sp/>word<sp/>frequency<sp/>table/<sp/>vector</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>Value<sp/>:<sp/>The<sp/>dictionary<sp/>containing<sp/>the<sp/>word<sp/>frequenct<sp/>vector<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>my_dictionary<sp/>={}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>text_document<sp/>=<sp/>open(file_path,<sp/></highlight><highlight class="stringliteral">&apos;r&apos;)</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>text_line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>text_document:<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text_line_buffer<sp/>=<sp/><ref refid="namespacediff_1a17722e85e83540a4710fa571f274e460" kindref="member">format_text</ref>(text_line)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>word<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>text_line_buffer:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>word<sp/>=<sp/>word.lower()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>word<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>word<sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>my_dictionary:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>my_dictionary[word]<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>word<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>my_dictionary:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>my_dictionary[word]<sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>text_document.close()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>key<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>my_dictionary.keys():</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>key<sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>key<sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>document_word_count:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>document_word_count[key]<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>key<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>document_word_count:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>document_word_count[key]<sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>my_dictionary[key]<sp/>/=<sp/>(len(my_dictionary.keys())<sp/>*<sp/>1.0)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>my_dictionary</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="namespacediff_1a3a1a3f01a48273670935a0fc45b8975f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacediff_1a3a1a3f01a48273670935a0fc45b8975f" kindref="member">inner_product</ref>(document_one_dictionary,<sp/>document_two_dictionary):</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>Function<sp/>name<sp/>:<sp/>inner_product</highlight></codeline>
+<codeline lineno="84"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Input<sp/>arguments<sp/>:</highlight></codeline>
+<codeline lineno="85"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>dictionary<sp/>document_one_dictionary<sp/>:<sp/>The<sp/>dictionary<sp/>corresponding<sp/>to<sp/>document<sp/>one.</highlight></codeline>
+<codeline lineno="86"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>dictionary<sp/>document_two_dictionary<sp/>:<sp/>The<sp/>dictionary<sp/>corresponding<sp/>to<sp/>document<sp/>two.</highlight></codeline>
+<codeline lineno="87"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Purpose<sp/>:<sp/>To<sp/>find<sp/>the<sp/>inner<sp/>product<sp/>of<sp/>two<sp/>vectors</highlight></codeline>
+<codeline lineno="88"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>Value<sp/>:<sp/>The<sp/>inner<sp/>product<sp/>of<sp/>two<sp/>vectors<sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>sum<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>key<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>document_one_dictionary.keys():</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>key<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>document_two_dictionary.keys():</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum<sp/>+=<sp/>document_one_dictionary[key]<sp/>*<sp/>document_two_dictionary[key]</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sum</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="namespacediff_1a0b1fc82894743728455b31d3e9ec3671" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacediff_1a0b1fc82894743728455b31d3e9ec3671" kindref="member">calculate_distance</ref>(document_one_dictionary,<sp/>document_two_dictionary):</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>Function<sp/>name<sp/>:<sp/>inner_product</highlight></codeline>
+<codeline lineno="100"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Input<sp/>arguments<sp/>:</highlight></codeline>
+<codeline lineno="101"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>dictionary<sp/>document_one_dictionary:<sp/>The<sp/>dictionary<sp/>corresponding<sp/>to<sp/>document<sp/>one.</highlight></codeline>
+<codeline lineno="102"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>dictionary<sp/>document_two_dictionary:<sp/>The<sp/>dictionary<sp/>corresponding<sp/>to<sp/>document<sp/>two.</highlight></codeline>
+<codeline lineno="103"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Purpose<sp/>:<sp/>To<sp/>find<sp/>the<sp/>distance<sp/>between<sp/>two<sp/>documents</highlight></codeline>
+<codeline lineno="104"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>Value<sp/>:<sp/>The<sp/>cosine<sp/>distance<sp/>of<sp/>two<sp/>vectors<sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>dot_product<sp/>=<sp/><ref refid="namespacediff_1a3a1a3f01a48273670935a0fc45b8975f" kindref="member">inner_product</ref>(document_one_dictionary,<sp/>document_two_dictionary)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>document_one_norm<sp/>=<sp/><ref refid="namespacediff_1a3a1a3f01a48273670935a0fc45b8975f" kindref="member">inner_product</ref>(document_one_dictionary,<sp/>document_one_dictionary)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>document_two_norm<sp/>=<sp/><ref refid="namespacediff_1a3a1a3f01a48273670935a0fc45b8975f" kindref="member">inner_product</ref>(document_two_dictionary,<sp/>document_two_dictionary)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dot_product<sp/>/<sp/>((document_one_norm<sp/>*<sp/>document_two_norm)<sp/>**<sp/>(1/2.0))</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="namespacediff_1aa2e19dbdbb5368eafd04b0cfe58c59a9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacediff_1aa2e19dbdbb5368eafd04b0cfe58c59a9" kindref="member">text_formatting</ref>(my_dictionary):</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>Function<sp/>name<sp/>:<sp/>inner_product</highlight></codeline>
+<codeline lineno="115"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Input<sp/>arguments<sp/>:</highlight></codeline>
+<codeline lineno="116"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>dictionary<sp/>my_dictionary<sp/>:<sp/>The<sp/>dictionary<sp/>to<sp/>be<sp/>formatted</highlight></codeline>
+<codeline lineno="117"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Purpose<sp/>:<sp/>To<sp/>remove<sp/>the<sp/>words<sp/>which<sp/>have<sp/>very<sp/>less<sp/>importance<sp/>to<sp/>the<sp/>meaning.</highlight></codeline>
+<codeline lineno="118"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>Value<sp/>:<sp/>The<sp/>modified<sp/>dictionary.<sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>word_file<sp/>=<sp/>open(</highlight><highlight class="stringliteral">&apos;useless_words.txt&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;r&apos;)</highlight></codeline>
+<codeline lineno="121"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>word<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>word_file:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>word<sp/>=<sp/>word.rstrip()</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>word<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>my_dictionary:</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>my_dictionary[word]<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>word_file.close()</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>my_dictionary</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="namespacediff_1ac7ecd54dde7759dd5569ffb765995278" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacediff_1ac7ecd54dde7759dd5569ffb765995278" kindref="member">ensure_dir</ref>(file_path):</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>Function<sp/>name<sp/>:<sp/>inner_product</highlight></codeline>
+<codeline lineno="132"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Input<sp/>arguments<sp/>:</highlight></codeline>
+<codeline lineno="133"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>string<sp/>file_path<sp/>:<sp/>The<sp/>path<sp/>of<sp/>the<sp/>folder.</highlight></codeline>
+<codeline lineno="134"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Purpose<sp/>:<sp/>To<sp/>create<sp/>a<sp/>directory<sp/>if<sp/>it<sp/>does<sp/>not<sp/>exists.</highlight></codeline>
+<codeline lineno="135"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>os.path.exists(file_path):</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os.mkdir(file_path)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="namespacediff_1adccd64c100d50ed0e87d46c33e8636eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>folder_path<sp/>=<sp/>raw_input(</highlight><highlight class="stringliteral">&quot;Please<sp/>input<sp/>the<sp/>path<sp/>to<sp/>the<sp/>folder&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="143" refid="namespacediff_1a7d02a567fcd601900d3960bef0191cea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>document_dictionary<sp/>=<sp/>{}</highlight></codeline>
+<codeline lineno="144" refid="namespacediff_1aed454348ccff9ceb835a6c22de15fa95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>output_folder_path<sp/>=<sp/>raw_input(</highlight><highlight class="stringliteral">&quot;Please<sp/>input<sp/>the<sp/>path<sp/>to<sp/>the<sp/>output<sp/>folder&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacediff_1ac7ecd54dde7759dd5569ffb765995278" kindref="member">ensure_dir</ref>(output_folder_path)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="namespacediff_1a08d29f91abd1bc75aa7d8ecb3aa39c91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>result_dictionary<sp/>=<sp/>{}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>filename<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>os.listdir(folder_path):</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>document_dictionary[filename]<sp/>=<sp/><ref refid="namespacediff_1af7396fb95b2a175d067c1c73c75c49f6" kindref="member">create_dictionary</ref>(folder_path<sp/>+<sp/>filename)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>file_index_one<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>os.listdir(folder_path):</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>file_index_two<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>os.listdir(folder_path):</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="namespacediff_1adb8493e93ac22af9aef08d29989bc40d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>document_one_dictionary<sp/>=<sp/>{}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>key<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>document_dictionary[file_index_one].keys():</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="namespacediff_1a1798972d3d6361a79c16d8470bf3471d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idf_key<sp/>=<sp/>math.log(len(document_dictionary)<sp/>/<sp/>(document_word_count[key]<sp/>*<sp/>1.0))</highlight></codeline>
+<codeline lineno="162" refid="namespacediff_1ab860e167471d632882c770f12e87927e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tf_key<sp/>=<sp/>document_dictionary[file_index_one][key]</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>document_one_dictionary[key]<sp/>=<sp/>tf_key<sp/>*<sp/>idf_key</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="namespacediff_1ad928e1eb5cb7ebde52f495bf99c78a3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>document_two_dictionary<sp/>=<sp/>{}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>key<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>document_dictionary[file_index_two].keys():</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idf_key<sp/>=<sp/>math.log(len(document_dictionary)<sp/>/<sp/>(document_word_count[key]<sp/>*<sp/>1.0))</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tf_key<sp/>=<sp/>document_dictionary[file_index_two][key]</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>document_two_dictionary[key]<sp/>=<sp/>tf_key<sp/>*<sp/>idf_key</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="namespacediff_1a5df2e8041c6fff30558b49edee35438a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/><ref refid="namespacediff_1a0b1fc82894743728455b31d3e9ec3671" kindref="member">calculate_distance</ref>(document_one_dictionary,<sp/>document_two_dictionary)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178" refid="namespacediff_1ac8ee8a35e457d5004c0f85b0383faf26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(file_index_one,<sp/>end<sp/>=</highlight><highlight class="stringliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(file_index_two)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result_dictionary[(file_index_one,<sp/>file_index_two)]<sp/>=<sp/>math.acos(result)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="namespacediff_1a3b4c2771da02846b61219801d8016b40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sorted_result<sp/>=<sp/>sorted(result_dictionary.items(),<sp/>key=operator.itemgetter(1))</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>os.chdir(output_folder_path)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;The<sp/>calculation<sp/>of<sp/>distances<sp/>has<sp/>finished<sp/>successfully!!!&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="187" refid="namespacediff_1a15a863df81a6f3099b088f9f52808389" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>result_file_name<sp/>=<sp/>raw_input(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>name<sp/>of<sp/>file<sp/>where<sp/>you<sp/>wish<sp/>to<sp/>save<sp/>the<sp/>result.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="188" refid="namespacediff_1aa1be62f435ce37ca93ba61d4ad88c0c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>result_file<sp/>=<sp/>open(result_file_name<sp/>,</highlight><highlight class="stringliteral">&apos;w&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>item<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>sorted_result:</highlight></codeline>
+<codeline lineno="190" refid="namespacediff_1a3759e132757b6fdecd117a665d6158ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(item[0][0],<sp/>end=</highlight><highlight class="stringliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,file=result_file)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(item[0][1],<sp/>end=</highlight><highlight class="stringliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,file=result_file)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(item[1],<sp/>end=</highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal">,file=result_file)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>result_file.close()</highlight></codeline>
+    </programlisting>
+    <location file="diff.py"/>
+  </compounddef>
+</doxygen>

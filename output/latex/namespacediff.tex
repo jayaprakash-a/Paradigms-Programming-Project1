@@ -1,0 +1,303 @@
+\hypertarget{namespacediff}{}\section{diff Namespace Reference}
+\label{namespacediff}\index{diff@{diff}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacediff_af60a451d448d916b5326b02f0c96147e}{remove\+\_\+delimiters} (text\+\_\+line)
+\item 
+def \hyperlink{namespacediff_a17722e85e83540a4710fa571f274e460}{format\+\_\+text} (text\+\_\+line)
+\item 
+def \hyperlink{namespacediff_af7396fb95b2a175d067c1c73c75c49f6}{create\+\_\+dictionary} (file\+\_\+path)
+\item 
+def \hyperlink{namespacediff_a3a1a3f01a48273670935a0fc45b8975f}{inner\+\_\+product} (\hyperlink{namespacediff_adb8493e93ac22af9aef08d29989bc40d}{document\+\_\+one\+\_\+dictionary}, \hyperlink{namespacediff_ad928e1eb5cb7ebde52f495bf99c78a3b}{document\+\_\+two\+\_\+dictionary})
+\item 
+def \hyperlink{namespacediff_a0b1fc82894743728455b31d3e9ec3671}{calculate\+\_\+distance} (\hyperlink{namespacediff_adb8493e93ac22af9aef08d29989bc40d}{document\+\_\+one\+\_\+dictionary}, \hyperlink{namespacediff_ad928e1eb5cb7ebde52f495bf99c78a3b}{document\+\_\+two\+\_\+dictionary})
+\item 
+def \hyperlink{namespacediff_aa2e19dbdbb5368eafd04b0cfe58c59a9}{text\+\_\+formatting} (my\+\_\+dictionary)
+\item 
+def \hyperlink{namespacediff_ac7ecd54dde7759dd5569ffb765995278}{ensure\+\_\+dir} (file\+\_\+path)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacediff_a46e2544bf0f797b8d42f4985d4b9bf0a}{delimiters} = \char`\"{}\textbackslash{}\textquotesingle{}\textbackslash{}\char`\"{}/$<$?$>$,.\+:$\ast$-\/+\textbackslash{}\textbackslash{}=`$\sim$!@\#$^\wedge$\&()\+\_\+ ;\char`\"{}
+\item 
+dictionary \hyperlink{namespacediff_af16edaaafe4787892cb925870fd0d108}{document\+\_\+word\+\_\+count} = \{\}
+\item 
+\hyperlink{namespacediff_adccd64c100d50ed0e87d46c33e8636eb}{folder\+\_\+path} = raw\+\_\+input(\char`\"{}Please input the path to the folder\char`\"{})
+\item 
+dictionary \hyperlink{namespacediff_a7d02a567fcd601900d3960bef0191cea}{document\+\_\+dictionary} = \{\}
+\item 
+\hyperlink{namespacediff_aed454348ccff9ceb835a6c22de15fa95}{output\+\_\+folder\+\_\+path} = raw\+\_\+input(\char`\"{}Please input the path to the output folder\char`\"{})
+\item 
+dictionary \hyperlink{namespacediff_a08d29f91abd1bc75aa7d8ecb3aa39c91}{result\+\_\+dictionary} = \{\}
+\item 
+dictionary \hyperlink{namespacediff_adb8493e93ac22af9aef08d29989bc40d}{document\+\_\+one\+\_\+dictionary} = \{\}
+\item 
+\hyperlink{namespacediff_a1798972d3d6361a79c16d8470bf3471d}{idf\+\_\+key} = math.\+log(len(\hyperlink{namespacediff_a7d02a567fcd601900d3960bef0191cea}{document\+\_\+dictionary}) / (\hyperlink{namespacediff_af16edaaafe4787892cb925870fd0d108}{document\+\_\+word\+\_\+count}\mbox{[}key\mbox{]} $\ast$ 1.\+0))
+\item 
+\hyperlink{namespacediff_ab860e167471d632882c770f12e87927e}{tf\+\_\+key} = \hyperlink{namespacediff_a7d02a567fcd601900d3960bef0191cea}{document\+\_\+dictionary}\mbox{[}\hyperlink{namespacediff_ac8ee8a35e457d5004c0f85b0383faf26}{file\+\_\+index\+\_\+one}\mbox{]}\mbox{[}key\mbox{]}
+\item 
+dictionary \hyperlink{namespacediff_ad928e1eb5cb7ebde52f495bf99c78a3b}{document\+\_\+two\+\_\+dictionary} = \{\}
+\item 
+\hyperlink{namespacediff_a5df2e8041c6fff30558b49edee35438a}{result} = \hyperlink{namespacediff_a0b1fc82894743728455b31d3e9ec3671}{calculate\+\_\+distance}(\hyperlink{namespacediff_adb8493e93ac22af9aef08d29989bc40d}{document\+\_\+one\+\_\+dictionary}, \hyperlink{namespacediff_ad928e1eb5cb7ebde52f495bf99c78a3b}{document\+\_\+two\+\_\+dictionary})
+\item 
+\hyperlink{namespacediff_ac8ee8a35e457d5004c0f85b0383faf26}{file\+\_\+index\+\_\+one}
+\item 
+\hyperlink{namespacediff_a2839fdf2e0df35c347f0649098c5ecdc}{end}
+\item 
+\hyperlink{namespacediff_a3b4c2771da02846b61219801d8016b40}{sorted\+\_\+result} = sorted(result\+\_\+dictionary.\+items(), key=operator.\+itemgetter(1))
+\item 
+\hyperlink{namespacediff_a15a863df81a6f3099b088f9f52808389}{result\+\_\+file\+\_\+name} = raw\+\_\+input(\char`\"{}Please enter the name of \hyperlink{namespacediff_a3759e132757b6fdecd117a665d6158ab}{file} where you wish to save the result.\char`\"{})
+\item 
+\hyperlink{namespacediff_aa1be62f435ce37ca93ba61d4ad88c0c9}{result\+\_\+file} = open(\hyperlink{namespacediff_a15a863df81a6f3099b088f9f52808389}{result\+\_\+file\+\_\+name} ,\textquotesingle{}w\textquotesingle{})
+\item 
+\hyperlink{namespacediff_a3759e132757b6fdecd117a665d6158ab}{file}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{diff@{diff}!calculate\+\_\+distance@{calculate\+\_\+distance}}
+\index{calculate\+\_\+distance@{calculate\+\_\+distance}!diff@{diff}}
+\subsubsection[{\texorpdfstring{calculate\+\_\+distance(document\+\_\+one\+\_\+dictionary, document\+\_\+two\+\_\+dictionary)}{calculate_distance(document_one_dictionary, document_two_dictionary)}}]{\setlength{\rightskip}{0pt plus 5cm}def diff.\+calculate\+\_\+distance (
+\begin{DoxyParamCaption}
+\item[{}]{document\+\_\+one\+\_\+dictionary, }
+\item[{}]{document\+\_\+two\+\_\+dictionary}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacediff_a0b1fc82894743728455b31d3e9ec3671}{}\label{namespacediff_a0b1fc82894743728455b31d3e9ec3671}
+\begin{DoxyVerb}Function name : inner_product
+Input arguments :
+    1. dictionary document_one_dictionary: The dictionary corresponding to document one.
+    2. dictionary document_two_dictionary: The dictionary corresponding to document two.
+Purpose : To find the distance between two documents
+Return Value : The cosine distance of two vectors 
+\end{DoxyVerb}
+ 
+
+Definition at line 98 of file diff.\+py.
+
+\index{diff@{diff}!create\+\_\+dictionary@{create\+\_\+dictionary}}
+\index{create\+\_\+dictionary@{create\+\_\+dictionary}!diff@{diff}}
+\subsubsection[{\texorpdfstring{create\+\_\+dictionary(file\+\_\+path)}{create_dictionary(file_path)}}]{\setlength{\rightskip}{0pt plus 5cm}def diff.\+create\+\_\+dictionary (
+\begin{DoxyParamCaption}
+\item[{}]{file\+\_\+path}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacediff_af7396fb95b2a175d067c1c73c75c49f6}{}\label{namespacediff_af7396fb95b2a175d067c1c73c75c49f6}
+\begin{DoxyVerb}Function name : create_dictionary
+Input arguments :
+    1. string file_path : The path to the file to be read.
+Purpose : To create the word frequency table/ vector
+Return Value : The dictionary containing the word frequenct vector 
+\end{DoxyVerb}
+ 
+
+Definition at line 50 of file diff.\+py.
+
+\index{diff@{diff}!ensure\+\_\+dir@{ensure\+\_\+dir}}
+\index{ensure\+\_\+dir@{ensure\+\_\+dir}!diff@{diff}}
+\subsubsection[{\texorpdfstring{ensure\+\_\+dir(file\+\_\+path)}{ensure_dir(file_path)}}]{\setlength{\rightskip}{0pt plus 5cm}def diff.\+ensure\+\_\+dir (
+\begin{DoxyParamCaption}
+\item[{}]{file\+\_\+path}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacediff_ac7ecd54dde7759dd5569ffb765995278}{}\label{namespacediff_ac7ecd54dde7759dd5569ffb765995278}
+\begin{DoxyVerb}Function name : inner_product
+Input arguments :
+    1. string file_path : The path of the folder.
+Purpose : To create a directory if it does not exists.
+\end{DoxyVerb}
+ 
+
+Definition at line 130 of file diff.\+py.
+
+\index{diff@{diff}!format\+\_\+text@{format\+\_\+text}}
+\index{format\+\_\+text@{format\+\_\+text}!diff@{diff}}
+\subsubsection[{\texorpdfstring{format\+\_\+text(text\+\_\+line)}{format_text(text_line)}}]{\setlength{\rightskip}{0pt plus 5cm}def diff.\+format\+\_\+text (
+\begin{DoxyParamCaption}
+\item[{}]{text\+\_\+line}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacediff_a17722e85e83540a4710fa571f274e460}{}\label{namespacediff_a17722e85e83540a4710fa571f274e460}
+\begin{DoxyVerb}Function name : format_text
+Input arguments :
+    1. string text_line : Piece of text
+Purpose : To format the text by removing delimiters and trailing whitespaces
+Return Value : The formatted string.
+\end{DoxyVerb}
+ 
+
+Definition at line 37 of file diff.\+py.
+
+\index{diff@{diff}!inner\+\_\+product@{inner\+\_\+product}}
+\index{inner\+\_\+product@{inner\+\_\+product}!diff@{diff}}
+\subsubsection[{\texorpdfstring{inner\+\_\+product(document\+\_\+one\+\_\+dictionary, document\+\_\+two\+\_\+dictionary)}{inner_product(document_one_dictionary, document_two_dictionary)}}]{\setlength{\rightskip}{0pt plus 5cm}def diff.\+inner\+\_\+product (
+\begin{DoxyParamCaption}
+\item[{}]{document\+\_\+one\+\_\+dictionary, }
+\item[{}]{document\+\_\+two\+\_\+dictionary}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacediff_a3a1a3f01a48273670935a0fc45b8975f}{}\label{namespacediff_a3a1a3f01a48273670935a0fc45b8975f}
+\begin{DoxyVerb}Function name : inner_product
+Input arguments :
+    1. dictionary document_one_dictionary : The dictionary corresponding to document one.
+    2. dictionary document_two_dictionary : The dictionary corresponding to document two.
+Purpose : To find the inner product of two vectors
+Return Value : The inner product of two vectors 
+\end{DoxyVerb}
+ 
+
+Definition at line 82 of file diff.\+py.
+
+\index{diff@{diff}!remove\+\_\+delimiters@{remove\+\_\+delimiters}}
+\index{remove\+\_\+delimiters@{remove\+\_\+delimiters}!diff@{diff}}
+\subsubsection[{\texorpdfstring{remove\+\_\+delimiters(text\+\_\+line)}{remove_delimiters(text_line)}}]{\setlength{\rightskip}{0pt plus 5cm}def diff.\+remove\+\_\+delimiters (
+\begin{DoxyParamCaption}
+\item[{}]{text\+\_\+line}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacediff_af60a451d448d916b5326b02f0c96147e}{}\label{namespacediff_af60a451d448d916b5326b02f0c96147e}
+\begin{DoxyVerb}Function name : remove_delimiters
+Input arguments :
+    1. string text_line : Piece of text
+Purpose : To remove unnecessary characters 
+Return Value : The string after removing characters.
+\end{DoxyVerb}
+ 
+
+Definition at line 24 of file diff.\+py.
+
+\index{diff@{diff}!text\+\_\+formatting@{text\+\_\+formatting}}
+\index{text\+\_\+formatting@{text\+\_\+formatting}!diff@{diff}}
+\subsubsection[{\texorpdfstring{text\+\_\+formatting(my\+\_\+dictionary)}{text_formatting(my_dictionary)}}]{\setlength{\rightskip}{0pt plus 5cm}def diff.\+text\+\_\+formatting (
+\begin{DoxyParamCaption}
+\item[{}]{my\+\_\+dictionary}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacediff_aa2e19dbdbb5368eafd04b0cfe58c59a9}{}\label{namespacediff_aa2e19dbdbb5368eafd04b0cfe58c59a9}
+\begin{DoxyVerb}Function name : inner_product
+Input arguments :
+    1. dictionary my_dictionary : The dictionary to be formatted
+Purpose : To remove the words which have very less importance to the meaning.
+Return Value : The modified dictionary. 
+\end{DoxyVerb}
+ 
+
+Definition at line 113 of file diff.\+py.
+
+
+
+\subsection{Variable Documentation}
+\index{diff@{diff}!delimiters@{delimiters}}
+\index{delimiters@{delimiters}!diff@{diff}}
+\subsubsection[{\texorpdfstring{delimiters}{delimiters}}]{\setlength{\rightskip}{0pt plus 5cm}string diff.\+delimiters = \char`\"{}\textbackslash{}\textquotesingle{}\textbackslash{}\char`\"{}/$<$?$>$,.\+:$\ast$-\/+\textbackslash{}\textbackslash{}=`$\sim$!@\#$^\wedge$\&()\+\_\+ ;\char`\"{}}\hypertarget{namespacediff_a46e2544bf0f797b8d42f4985d4b9bf0a}{}\label{namespacediff_a46e2544bf0f797b8d42f4985d4b9bf0a}
+
+
+Definition at line 17 of file diff.\+py.
+
+\index{diff@{diff}!document\+\_\+dictionary@{document\+\_\+dictionary}}
+\index{document\+\_\+dictionary@{document\+\_\+dictionary}!diff@{diff}}
+\subsubsection[{\texorpdfstring{document\+\_\+dictionary}{document_dictionary}}]{\setlength{\rightskip}{0pt plus 5cm}dictionary diff.\+document\+\_\+dictionary = \{\}}\hypertarget{namespacediff_a7d02a567fcd601900d3960bef0191cea}{}\label{namespacediff_a7d02a567fcd601900d3960bef0191cea}
+
+
+Definition at line 143 of file diff.\+py.
+
+\index{diff@{diff}!document\+\_\+one\+\_\+dictionary@{document\+\_\+one\+\_\+dictionary}}
+\index{document\+\_\+one\+\_\+dictionary@{document\+\_\+one\+\_\+dictionary}!diff@{diff}}
+\subsubsection[{\texorpdfstring{document\+\_\+one\+\_\+dictionary}{document_one_dictionary}}]{\setlength{\rightskip}{0pt plus 5cm}dictionary diff.\+document\+\_\+one\+\_\+dictionary = \{\}}\hypertarget{namespacediff_adb8493e93ac22af9aef08d29989bc40d}{}\label{namespacediff_adb8493e93ac22af9aef08d29989bc40d}
+
+
+Definition at line 157 of file diff.\+py.
+
+\index{diff@{diff}!document\+\_\+two\+\_\+dictionary@{document\+\_\+two\+\_\+dictionary}}
+\index{document\+\_\+two\+\_\+dictionary@{document\+\_\+two\+\_\+dictionary}!diff@{diff}}
+\subsubsection[{\texorpdfstring{document\+\_\+two\+\_\+dictionary}{document_two_dictionary}}]{\setlength{\rightskip}{0pt plus 5cm}dictionary diff.\+document\+\_\+two\+\_\+dictionary = \{\}}\hypertarget{namespacediff_ad928e1eb5cb7ebde52f495bf99c78a3b}{}\label{namespacediff_ad928e1eb5cb7ebde52f495bf99c78a3b}
+
+
+Definition at line 166 of file diff.\+py.
+
+\index{diff@{diff}!document\+\_\+word\+\_\+count@{document\+\_\+word\+\_\+count}}
+\index{document\+\_\+word\+\_\+count@{document\+\_\+word\+\_\+count}!diff@{diff}}
+\subsubsection[{\texorpdfstring{document\+\_\+word\+\_\+count}{document_word_count}}]{\setlength{\rightskip}{0pt plus 5cm}dictionary diff.\+document\+\_\+word\+\_\+count = \{\}}\hypertarget{namespacediff_af16edaaafe4787892cb925870fd0d108}{}\label{namespacediff_af16edaaafe4787892cb925870fd0d108}
+
+
+Definition at line 21 of file diff.\+py.
+
+\index{diff@{diff}!end@{end}}
+\index{end@{end}!diff@{diff}}
+\subsubsection[{\texorpdfstring{end}{end}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+end}\hypertarget{namespacediff_a2839fdf2e0df35c347f0649098c5ecdc}{}\label{namespacediff_a2839fdf2e0df35c347f0649098c5ecdc}
+
+
+Definition at line 178 of file diff.\+py.
+
+\index{diff@{diff}!file@{file}}
+\index{file@{file}!diff@{diff}}
+\subsubsection[{\texorpdfstring{file}{file}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+file}\hypertarget{namespacediff_a3759e132757b6fdecd117a665d6158ab}{}\label{namespacediff_a3759e132757b6fdecd117a665d6158ab}
+
+
+Definition at line 190 of file diff.\+py.
+
+\index{diff@{diff}!file\+\_\+index\+\_\+one@{file\+\_\+index\+\_\+one}}
+\index{file\+\_\+index\+\_\+one@{file\+\_\+index\+\_\+one}!diff@{diff}}
+\subsubsection[{\texorpdfstring{file\+\_\+index\+\_\+one}{file_index_one}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+file\+\_\+index\+\_\+one}\hypertarget{namespacediff_ac8ee8a35e457d5004c0f85b0383faf26}{}\label{namespacediff_ac8ee8a35e457d5004c0f85b0383faf26}
+
+
+Definition at line 178 of file diff.\+py.
+
+\index{diff@{diff}!folder\+\_\+path@{folder\+\_\+path}}
+\index{folder\+\_\+path@{folder\+\_\+path}!diff@{diff}}
+\subsubsection[{\texorpdfstring{folder\+\_\+path}{folder_path}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+folder\+\_\+path = raw\+\_\+input(\char`\"{}Please input the path to the folder\char`\"{})}\hypertarget{namespacediff_adccd64c100d50ed0e87d46c33e8636eb}{}\label{namespacediff_adccd64c100d50ed0e87d46c33e8636eb}
+
+
+Definition at line 142 of file diff.\+py.
+
+\index{diff@{diff}!idf\+\_\+key@{idf\+\_\+key}}
+\index{idf\+\_\+key@{idf\+\_\+key}!diff@{diff}}
+\subsubsection[{\texorpdfstring{idf\+\_\+key}{idf_key}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+idf\+\_\+key = math.\+log(len({\bf document\+\_\+dictionary}) / ({\bf document\+\_\+word\+\_\+count}\mbox{[}key\mbox{]} $\ast$ 1.\+0))}\hypertarget{namespacediff_a1798972d3d6361a79c16d8470bf3471d}{}\label{namespacediff_a1798972d3d6361a79c16d8470bf3471d}
+
+
+Definition at line 161 of file diff.\+py.
+
+\index{diff@{diff}!output\+\_\+folder\+\_\+path@{output\+\_\+folder\+\_\+path}}
+\index{output\+\_\+folder\+\_\+path@{output\+\_\+folder\+\_\+path}!diff@{diff}}
+\subsubsection[{\texorpdfstring{output\+\_\+folder\+\_\+path}{output_folder_path}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+output\+\_\+folder\+\_\+path = raw\+\_\+input(\char`\"{}Please input the path to the output folder\char`\"{})}\hypertarget{namespacediff_aed454348ccff9ceb835a6c22de15fa95}{}\label{namespacediff_aed454348ccff9ceb835a6c22de15fa95}
+
+
+Definition at line 144 of file diff.\+py.
+
+\index{diff@{diff}!result@{result}}
+\index{result@{result}!diff@{diff}}
+\subsubsection[{\texorpdfstring{result}{result}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+result = {\bf calculate\+\_\+distance}({\bf document\+\_\+one\+\_\+dictionary}, {\bf document\+\_\+two\+\_\+dictionary})}\hypertarget{namespacediff_a5df2e8041c6fff30558b49edee35438a}{}\label{namespacediff_a5df2e8041c6fff30558b49edee35438a}
+
+
+Definition at line 176 of file diff.\+py.
+
+\index{diff@{diff}!result\+\_\+dictionary@{result\+\_\+dictionary}}
+\index{result\+\_\+dictionary@{result\+\_\+dictionary}!diff@{diff}}
+\subsubsection[{\texorpdfstring{result\+\_\+dictionary}{result_dictionary}}]{\setlength{\rightskip}{0pt plus 5cm}dictionary diff.\+result\+\_\+dictionary = \{\}}\hypertarget{namespacediff_a08d29f91abd1bc75aa7d8ecb3aa39c91}{}\label{namespacediff_a08d29f91abd1bc75aa7d8ecb3aa39c91}
+
+
+Definition at line 148 of file diff.\+py.
+
+\index{diff@{diff}!result\+\_\+file@{result\+\_\+file}}
+\index{result\+\_\+file@{result\+\_\+file}!diff@{diff}}
+\subsubsection[{\texorpdfstring{result\+\_\+file}{result_file}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+result\+\_\+file = open({\bf result\+\_\+file\+\_\+name} ,\textquotesingle{}w\textquotesingle{})}\hypertarget{namespacediff_aa1be62f435ce37ca93ba61d4ad88c0c9}{}\label{namespacediff_aa1be62f435ce37ca93ba61d4ad88c0c9}
+
+
+Definition at line 188 of file diff.\+py.
+
+\index{diff@{diff}!result\+\_\+file\+\_\+name@{result\+\_\+file\+\_\+name}}
+\index{result\+\_\+file\+\_\+name@{result\+\_\+file\+\_\+name}!diff@{diff}}
+\subsubsection[{\texorpdfstring{result\+\_\+file\+\_\+name}{result_file_name}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+result\+\_\+file\+\_\+name = raw\+\_\+input(\char`\"{}Please enter the name of {\bf file} where you wish to save the result.\char`\"{})}\hypertarget{namespacediff_a15a863df81a6f3099b088f9f52808389}{}\label{namespacediff_a15a863df81a6f3099b088f9f52808389}
+
+
+Definition at line 187 of file diff.\+py.
+
+\index{diff@{diff}!sorted\+\_\+result@{sorted\+\_\+result}}
+\index{sorted\+\_\+result@{sorted\+\_\+result}!diff@{diff}}
+\subsubsection[{\texorpdfstring{sorted\+\_\+result}{sorted_result}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+sorted\+\_\+result = sorted(result\+\_\+dictionary.\+items(), key=operator.\+itemgetter(1))}\hypertarget{namespacediff_a3b4c2771da02846b61219801d8016b40}{}\label{namespacediff_a3b4c2771da02846b61219801d8016b40}
+
+
+Definition at line 183 of file diff.\+py.
+
+\index{diff@{diff}!tf\+\_\+key@{tf\+\_\+key}}
+\index{tf\+\_\+key@{tf\+\_\+key}!diff@{diff}}
+\subsubsection[{\texorpdfstring{tf\+\_\+key}{tf_key}}]{\setlength{\rightskip}{0pt plus 5cm}diff.\+tf\+\_\+key = {\bf document\+\_\+dictionary}\mbox{[}{\bf file\+\_\+index\+\_\+one}\mbox{]}\mbox{[}key\mbox{]}}\hypertarget{namespacediff_ab860e167471d632882c770f12e87927e}{}\label{namespacediff_ab860e167471d632882c770f12e87927e}
+
+
+Definition at line 162 of file diff.\+py.
+

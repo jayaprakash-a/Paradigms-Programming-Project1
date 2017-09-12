@@ -1,0 +1,269 @@
+.TH "diff" 3 "Tue Sep 12 2017" "Version 1" "MyProject" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+diff \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBremove_delimiters\fP (text_line)"
+.br
+.ti -1c
+.RI "def \fBformat_text\fP (text_line)"
+.br
+.ti -1c
+.RI "def \fBcreate_dictionary\fP (file_path)"
+.br
+.ti -1c
+.RI "def \fBinner_product\fP (\fBdocument_one_dictionary\fP, \fBdocument_two_dictionary\fP)"
+.br
+.ti -1c
+.RI "def \fBcalculate_distance\fP (\fBdocument_one_dictionary\fP, \fBdocument_two_dictionary\fP)"
+.br
+.ti -1c
+.RI "def \fBtext_formatting\fP (my_dictionary)"
+.br
+.ti -1c
+.RI "def \fBensure_dir\fP (file_path)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "string \fBdelimiters\fP = '\\'\\'/<?>,\&.:*\-+\\\\=`~!@#^&()_ ;'"
+.br
+.ti -1c
+.RI "dictionary \fBdocument_word_count\fP = {}"
+.br
+.ti -1c
+.RI "\fBfolder_path\fP = raw_input('Please input the path to the folder')"
+.br
+.ti -1c
+.RI "dictionary \fBdocument_dictionary\fP = {}"
+.br
+.ti -1c
+.RI "\fBoutput_folder_path\fP = raw_input('Please input the path to the output folder')"
+.br
+.ti -1c
+.RI "dictionary \fBresult_dictionary\fP = {}"
+.br
+.ti -1c
+.RI "dictionary \fBdocument_one_dictionary\fP = {}"
+.br
+.ti -1c
+.RI "\fBidf_key\fP = math\&.log(len(\fBdocument_dictionary\fP) / (\fBdocument_word_count\fP[key] * 1\&.0))"
+.br
+.ti -1c
+.RI "\fBtf_key\fP = \fBdocument_dictionary\fP[\fBfile_index_one\fP][key]"
+.br
+.ti -1c
+.RI "dictionary \fBdocument_two_dictionary\fP = {}"
+.br
+.ti -1c
+.RI "\fBresult\fP = \fBcalculate_distance\fP(\fBdocument_one_dictionary\fP, \fBdocument_two_dictionary\fP)"
+.br
+.ti -1c
+.RI "\fBfile_index_one\fP"
+.br
+.ti -1c
+.RI "\fBend\fP"
+.br
+.ti -1c
+.RI "\fBsorted_result\fP = sorted(result_dictionary\&.items(), key=operator\&.itemgetter(1))"
+.br
+.ti -1c
+.RI "\fBresult_file_name\fP = raw_input('Please enter the name of \fBfile\fP where you wish to save the result\&.')"
+.br
+.ti -1c
+.RI "\fBresult_file\fP = open(\fBresult_file_name\fP ,'w')"
+.br
+.ti -1c
+.RI "\fBfile\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def diff\&.calculate_distance ( document_one_dictionary,  document_two_dictionary)"
+
+.PP
+.nf
+Function name : inner_product
+Input arguments :
+    1. dictionary document_one_dictionary: The dictionary corresponding to document one.
+    2. dictionary document_two_dictionary: The dictionary corresponding to document two.
+Purpose : To find the distance between two documents
+Return Value : The cosine distance of two vectors 
+
+.fi
+.PP
+ 
+.PP
+Definition at line 98 of file diff\&.py\&.
+.SS "def diff\&.create_dictionary ( file_path)"
+
+.PP
+.nf
+Function name : create_dictionary
+Input arguments :
+    1. string file_path : The path to the file to be read.
+Purpose : To create the word frequency table/ vector
+Return Value : The dictionary containing the word frequenct vector 
+
+.fi
+.PP
+ 
+.PP
+Definition at line 50 of file diff\&.py\&.
+.SS "def diff\&.ensure_dir ( file_path)"
+
+.PP
+.nf
+Function name : inner_product
+Input arguments :
+    1. string file_path : The path of the folder.
+Purpose : To create a directory if it does not exists.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 130 of file diff\&.py\&.
+.SS "def diff\&.format_text ( text_line)"
+
+.PP
+.nf
+Function name : format_text
+Input arguments :
+    1. string text_line : Piece of text
+Purpose : To format the text by removing delimiters and trailing whitespaces
+Return Value : The formatted string.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 37 of file diff\&.py\&.
+.SS "def diff\&.inner_product ( document_one_dictionary,  document_two_dictionary)"
+
+.PP
+.nf
+Function name : inner_product
+Input arguments :
+    1. dictionary document_one_dictionary : The dictionary corresponding to document one.
+    2. dictionary document_two_dictionary : The dictionary corresponding to document two.
+Purpose : To find the inner product of two vectors
+Return Value : The inner product of two vectors 
+
+.fi
+.PP
+ 
+.PP
+Definition at line 82 of file diff\&.py\&.
+.SS "def diff\&.remove_delimiters ( text_line)"
+
+.PP
+.nf
+Function name : remove_delimiters
+Input arguments :
+    1. string text_line : Piece of text
+Purpose : To remove unnecessary characters 
+Return Value : The string after removing characters.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 24 of file diff\&.py\&.
+.SS "def diff\&.text_formatting ( my_dictionary)"
+
+.PP
+.nf
+Function name : inner_product
+Input arguments :
+    1. dictionary my_dictionary : The dictionary to be formatted
+Purpose : To remove the words which have very less importance to the meaning.
+Return Value : The modified dictionary. 
+
+.fi
+.PP
+ 
+.PP
+Definition at line 113 of file diff\&.py\&.
+.SH "Variable Documentation"
+.PP 
+.SS "string diff\&.delimiters = '\\'\\'/<?>,\&.:*\-+\\\\=`~!@#^&()_ ;'"
+
+.PP
+Definition at line 17 of file diff\&.py\&.
+.SS "dictionary diff\&.document_dictionary = {}"
+
+.PP
+Definition at line 143 of file diff\&.py\&.
+.SS "dictionary diff\&.document_one_dictionary = {}"
+
+.PP
+Definition at line 157 of file diff\&.py\&.
+.SS "dictionary diff\&.document_two_dictionary = {}"
+
+.PP
+Definition at line 166 of file diff\&.py\&.
+.SS "dictionary diff\&.document_word_count = {}"
+
+.PP
+Definition at line 21 of file diff\&.py\&.
+.SS "diff\&.end"
+
+.PP
+Definition at line 178 of file diff\&.py\&.
+.SS "diff\&.file"
+
+.PP
+Definition at line 190 of file diff\&.py\&.
+.SS "diff\&.file_index_one"
+
+.PP
+Definition at line 178 of file diff\&.py\&.
+.SS "diff\&.folder_path = raw_input('Please input the path to the folder')"
+
+.PP
+Definition at line 142 of file diff\&.py\&.
+.SS "diff\&.idf_key = math\&.log(len(\fBdocument_dictionary\fP) / (\fBdocument_word_count\fP[key] * 1\&.0))"
+
+.PP
+Definition at line 161 of file diff\&.py\&.
+.SS "diff\&.output_folder_path = raw_input('Please input the path to the output folder')"
+
+.PP
+Definition at line 144 of file diff\&.py\&.
+.SS "diff\&.result = \fBcalculate_distance\fP(\fBdocument_one_dictionary\fP, \fBdocument_two_dictionary\fP)"
+
+.PP
+Definition at line 176 of file diff\&.py\&.
+.SS "dictionary diff\&.result_dictionary = {}"
+
+.PP
+Definition at line 148 of file diff\&.py\&.
+.SS "diff\&.result_file = open(\fBresult_file_name\fP ,'w')"
+
+.PP
+Definition at line 188 of file diff\&.py\&.
+.SS "diff\&.result_file_name = raw_input('Please enter the name of \fBfile\fP where you wish to save the result\&.')"
+
+.PP
+Definition at line 187 of file diff\&.py\&.
+.SS "diff\&.sorted_result = sorted(result_dictionary\&.items(), key=operator\&.itemgetter(1))"
+
+.PP
+Definition at line 183 of file diff\&.py\&.
+.SS "diff\&.tf_key = \fBdocument_dictionary\fP[\fBfile_index_one\fP][key]"
+
+.PP
+Definition at line 162 of file diff\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MyProject from the source code\&.

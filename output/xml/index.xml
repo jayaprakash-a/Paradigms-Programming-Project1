@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="namespacediff" kind="namespace"><name>diff</name>
+    <member refid="namespacediff_1a46e2544bf0f797b8d42f4985d4b9bf0a" kind="variable"><name>delimiters</name></member>
+    <member refid="namespacediff_1af16edaaafe4787892cb925870fd0d108" kind="variable"><name>document_word_count</name></member>
+    <member refid="namespacediff_1adccd64c100d50ed0e87d46c33e8636eb" kind="variable"><name>folder_path</name></member>
+    <member refid="namespacediff_1a7d02a567fcd601900d3960bef0191cea" kind="variable"><name>document_dictionary</name></member>
+    <member refid="namespacediff_1aed454348ccff9ceb835a6c22de15fa95" kind="variable"><name>output_folder_path</name></member>
+    <member refid="namespacediff_1a08d29f91abd1bc75aa7d8ecb3aa39c91" kind="variable"><name>result_dictionary</name></member>
+    <member refid="namespacediff_1adb8493e93ac22af9aef08d29989bc40d" kind="variable"><name>document_one_dictionary</name></member>
+    <member refid="namespacediff_1a1798972d3d6361a79c16d8470bf3471d" kind="variable"><name>idf_key</name></member>
+    <member refid="namespacediff_1ab860e167471d632882c770f12e87927e" kind="variable"><name>tf_key</name></member>
+    <member refid="namespacediff_1ad928e1eb5cb7ebde52f495bf99c78a3b" kind="variable"><name>document_two_dictionary</name></member>
+    <member refid="namespacediff_1a5df2e8041c6fff30558b49edee35438a" kind="variable"><name>result</name></member>
+    <member refid="namespacediff_1ac8ee8a35e457d5004c0f85b0383faf26" kind="variable"><name>file_index_one</name></member>
+    <member refid="namespacediff_1a2839fdf2e0df35c347f0649098c5ecdc" kind="variable"><name>end</name></member>
+    <member refid="namespacediff_1a3b4c2771da02846b61219801d8016b40" kind="variable"><name>sorted_result</name></member>
+    <member refid="namespacediff_1a15a863df81a6f3099b088f9f52808389" kind="variable"><name>result_file_name</name></member>
+    <member refid="namespacediff_1aa1be62f435ce37ca93ba61d4ad88c0c9" kind="variable"><name>result_file</name></member>
+    <member refid="namespacediff_1a3759e132757b6fdecd117a665d6158ab" kind="variable"><name>file</name></member>
+    <member refid="namespacediff_1af60a451d448d916b5326b02f0c96147e" kind="function"><name>remove_delimiters</name></member>
+    <member refid="namespacediff_1a17722e85e83540a4710fa571f274e460" kind="function"><name>format_text</name></member>
+    <member refid="namespacediff_1af7396fb95b2a175d067c1c73c75c49f6" kind="function"><name>create_dictionary</name></member>
+    <member refid="namespacediff_1a3a1a3f01a48273670935a0fc45b8975f" kind="function"><name>inner_product</name></member>
+    <member refid="namespacediff_1a0b1fc82894743728455b31d3e9ec3671" kind="function"><name>calculate_distance</name></member>
+    <member refid="namespacediff_1aa2e19dbdbb5368eafd04b0cfe58c59a9" kind="function"><name>text_formatting</name></member>
+    <member refid="namespacediff_1ac7ecd54dde7759dd5569ffb765995278" kind="function"><name>ensure_dir</name></member>
+  </compound>
+  <compound refid="diff_8py" kind="file"><name>diff.py</name>
+  </compound>
+</doxygenindex>

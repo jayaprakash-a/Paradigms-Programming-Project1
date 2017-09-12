@@ -1,0 +1,98 @@
+.TH "diff.py" 3 "Tue Sep 12 2017" "Version 1" "MyProject" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+diff.py \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBdiff\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBdiff\&.remove_delimiters\fP (text_line)"
+.br
+.ti -1c
+.RI "def \fBdiff\&.format_text\fP (text_line)"
+.br
+.ti -1c
+.RI "def \fBdiff\&.create_dictionary\fP (file_path)"
+.br
+.ti -1c
+.RI "def \fBdiff\&.inner_product\fP (document_one_dictionary, document_two_dictionary)"
+.br
+.ti -1c
+.RI "def \fBdiff\&.calculate_distance\fP (document_one_dictionary, document_two_dictionary)"
+.br
+.ti -1c
+.RI "def \fBdiff\&.text_formatting\fP (my_dictionary)"
+.br
+.ti -1c
+.RI "def \fBdiff\&.ensure_dir\fP (file_path)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "string \fBdiff\&.delimiters\fP = '\\'\\'/<?>,\&.:*\-+\\\\=`~!@#^&()_ ;'"
+.br
+.ti -1c
+.RI "dictionary \fBdiff\&.document_word_count\fP = {}"
+.br
+.ti -1c
+.RI "\fBdiff\&.folder_path\fP = raw_input('Please input the path to the folder')"
+.br
+.ti -1c
+.RI "dictionary \fBdiff\&.document_dictionary\fP = {}"
+.br
+.ti -1c
+.RI "\fBdiff\&.output_folder_path\fP = raw_input('Please input the path to the output folder')"
+.br
+.ti -1c
+.RI "dictionary \fBdiff\&.result_dictionary\fP = {}"
+.br
+.ti -1c
+.RI "dictionary \fBdiff\&.document_one_dictionary\fP = {}"
+.br
+.ti -1c
+.RI "\fBdiff\&.idf_key\fP = math\&.log(len(document_dictionary) / (document_word_count[key] * 1\&.0))"
+.br
+.ti -1c
+.RI "\fBdiff\&.tf_key\fP = document_dictionary[file_index_one][key]"
+.br
+.ti -1c
+.RI "dictionary \fBdiff\&.document_two_dictionary\fP = {}"
+.br
+.ti -1c
+.RI "\fBdiff\&.result\fP = calculate_distance(document_one_dictionary, document_two_dictionary)"
+.br
+.ti -1c
+.RI "\fBdiff\&.file_index_one\fP"
+.br
+.ti -1c
+.RI "\fBdiff\&.end\fP"
+.br
+.ti -1c
+.RI "\fBdiff\&.sorted_result\fP = sorted(result_dictionary\&.items(), key=operator\&.itemgetter(1))"
+.br
+.ti -1c
+.RI "\fBdiff\&.result_file_name\fP = raw_input('Please enter the name of file where you wish to save the result\&.')"
+.br
+.ti -1c
+.RI "\fBdiff\&.result_file\fP = open(result_file_name ,'w')"
+.br
+.ti -1c
+.RI "\fBdiff\&.file\fP"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MyProject from the source code\&.
