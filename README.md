@@ -4,20 +4,20 @@
 ## Instructor : Dr. Mrinal Kanti Das
 ## Brief Introduction
 #### Contributors: 
-> Jayaprakash A &nbsp;&nbsp;&nbsp;&nbsp;111501010  
+> Jayaprakash A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;111501010  
 > Siddhardha SST&nbsp;&nbsp;&nbsp;111501028  
-> Mettu Aditya&nbsp;&nbsp;&nbsp;&nbsp;111501016  
-> Vinay Ande&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 111501004  
+> Mettu Aditya&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;111501016  
+> Vinay Ande&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 111501004  
 
 #### Problem Statement
 <span style="font-family: Calibri; font-size: 1em;">Compute distance between two documents.</span>
 
 ## Contents Of The Repository
-* diff.py - &nbsp;&nbsp;The file that calculates the distance between two documents
-* /output  - This folder contains the documentation of the project
-* configure.txt - For configuring the documentation
-* /20_newsgroups/ - Dataset used for testing.
-* /out_res/ - Contains sample output.
+* diff.py - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The file that calculates the distance between two documents
+* /output  - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the documentation of the project
+* configure.txt - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For configuring the documentation
+* /20_newsgroups/ - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dataset used for testing.
+* /out_res/ - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contains sample output.
 * README.md 
 * useless_words.txt - Some file used in the code
 
