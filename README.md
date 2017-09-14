@@ -17,17 +17,17 @@
 * /output  - This folder contains the documentation of the project
 * configure.txt - For configuring the documentation
 * /20_newsgroups/ - Dataset used for testing.
-* /out_res/ - Contais sample output.
+* /out_res/ - Contains sample output.
 * README.md 
 * useless_words.txt - Some file used in the code
 
 ## Running Instructions
 ``` python diff.py```
 ## Instructions to Use
-> Run the file.
-> Give the path to the input folder.
-> Give path to folder where you wish to save the output and also the filename.
-> Wait for the execution to finish. Now browse to output folder you specified and locate your output file.
+> Run the file.  
+> Give the path to the input folder.  
+> Give path to folder where you wish to save the output and also the filename.  
+> Wait for the execution to finish. Now browse to output folder you specified and locate your output file.  
 ## Some Sample Outputs
  The output generated when run on the folder alt.atheism in the 20_newsgroups dataset has been saved in the out_res folder.
 
