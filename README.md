@@ -13,13 +13,13 @@
 <span style="font-family: Calibri; font-size: 1em;">Compute distance between two documents.</span>
 
 ## Contents Of The Repository
-* diff.py - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The file that calculates the distance between two documents
-* /output  - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the documentation of the project
-* configure.txt - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For configuring the documentation
+* diff.py - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The file that calculates the distance between two documents
+* /output  - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the documentation of the project
+* configure.txt - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For configuring the documentation
 * /20_newsgroups/ - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dataset used for testing.
-* /out_res/ - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contains sample output.
+* /out_res/ - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contains sample output.
 * README.md 
-* useless_words.txt - Some file used in the code
+* useless_words.txt - &nbsp;&nbsp;&nbsp;&nbsp;Some file used in the code
 
 ## Running Instructions
 ``` python diff.py```
