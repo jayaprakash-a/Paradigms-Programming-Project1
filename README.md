@@ -24,7 +24,7 @@
 ## Running Instructions
 ``` python diff.py```
 ## Instructions to Use
-> Run the file.  
+> Run the python file as instructed above.  
 > Give the path to the input folder.  
 > Give path to folder where you wish to save the output and also the filename.  
 > Wait for the execution to finish. Now browse to output folder you specified and locate your output file.  
