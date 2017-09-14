@@ -13,22 +13,23 @@
 <span style="font-family: Calibri; font-size: 1em;">Compute distance between two documents.</span>
 
 ## Contents Of The Repository
-* diff.py - The file that calculates the distance between two documents
+* diff.py - &nbsp;&nbsp;The file that calculates the distance between two documents
 * /output  - This folder contains the documentation of the project
 * configure.txt - For configuring the documentation
-* temp.txt - Sample text for testing
-* temp2.txt - Sample text for testing
+* /20_newsgroups/ - Dataset used for testing.
+* /out_res/ - Contais sample output.
 * README.md 
 * useless_words.txt - Some file used in the code
 
-## Compiling Instructions
-
 ## Running Instructions
-
+``` python diff.py```
 ## Instructions to Use
-
+> Run the file.
+> Give the path to the input folder.
+> Give path to folder where you wish to save the output and also the filename.
+> Wait for the execution to finish. Now browse to output folder you specified and locate your output file.
 ## Some Sample Outputs
-
+ The output generated when run on the folder alt.atheism in the 20_newsgroups dataset has been saved in the out_res folder.
 
 ## Who do I talk to?
 
