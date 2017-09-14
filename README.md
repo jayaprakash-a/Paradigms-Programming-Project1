@@ -4,10 +4,10 @@
 ## Instructor : Dr. Mrinal Kanti Das
 ## Brief Introduction
 #### Contributors: 
-> Jayaprakash A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;111501010  
-> Siddhardha SST&nbsp;&nbsp;&nbsp;111501028  
-> Mettu Aditya&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;111501016  
-> Vinay Ande&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 111501004  
+> Jayaprakash A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;111501010  
+> Siddhardha SST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;111501028  
+> Mettu Aditya&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;111501016  
+> Vinay Ande&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;111501004  
 
 #### Problem Statement
 <span style="font-family: Calibri; font-size: 1em;">Compute distance between two documents.</span>
