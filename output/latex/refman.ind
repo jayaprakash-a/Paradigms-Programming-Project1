@@ -1,108 +1,177 @@
 \begin{theindex}
 
   \item {calculate\+\_\+distance}
-    \subitem {diff}, \hyperpage{6}
+    \subitem {diff}, \hyperpage{8}
+  \item {calculate\+\_\+nearest}
+    \subitem {result}, \hyperpage{12}
+  \item {create\+\_\+dict}, \hyperpage{5}
+    \subitem {create\+\_\+dictionary}, \hyperpage{5}
+    \subitem {delimiters}, \hyperpage{6}
+    \subitem {dict\+\_\+file}, \hyperpage{6}
+    \subitem {document\+\_\+dictionary}, \hyperpage{6}
+    \subitem {document\+\_\+word\+\_\+count}, \hyperpage{6}
+    \subitem {end}, \hyperpage{6}
+    \subitem {file}, \hyperpage{7}
+    \subitem {folder\+\_\+path}, \hyperpage{7}
+    \subitem {format\+\_\+text}, \hyperpage{5}
+    \subitem {key}, \hyperpage{7}
+    \subitem {remove\+\_\+delimiters}, \hyperpage{6}
+    \subitem {text\+\_\+formatting}, \hyperpage{6}
+  \item {create\+\_\+dict.\+py}, \hyperpage{15}
   \item {create\+\_\+dictionary}
-    \subitem {diff}, \hyperpage{6}
+    \subitem {create\+\_\+dict}, \hyperpage{5}
+    \subitem {diff}, \hyperpage{8}
+  \item {cur\+\_\+home\+\_\+dir}
+    \subitem {result}, \hyperpage{12}
 
   \indexspace
 
   \item {delimiters}
-    \subitem {diff}, \hyperpage{7}
-  \item {diff}, \hyperpage{5}
-    \subitem {calculate\+\_\+distance}, \hyperpage{6}
-    \subitem {create\+\_\+dictionary}, \hyperpage{6}
-    \subitem {delimiters}, \hyperpage{7}
-    \subitem {document\+\_\+dictionary}, \hyperpage{7}
-    \subitem {document\+\_\+one\+\_\+dictionary}, \hyperpage{7}
-    \subitem {document\+\_\+two\+\_\+dictionary}, \hyperpage{7}
-    \subitem {document\+\_\+word\+\_\+count}, \hyperpage{7}
-    \subitem {end}, \hyperpage{7}
-    \subitem {ensure\+\_\+dir}, \hyperpage{6}
-    \subitem {file}, \hyperpage{7}
-    \subitem {file\+\_\+index\+\_\+one}, \hyperpage{8}
-    \subitem {folder\+\_\+path}, \hyperpage{8}
-    \subitem {format\+\_\+text}, \hyperpage{6}
-    \subitem {idf\+\_\+key}, \hyperpage{8}
-    \subitem {inner\+\_\+product}, \hyperpage{6}
-    \subitem {output\+\_\+folder\+\_\+path}, \hyperpage{8}
-    \subitem {remove\+\_\+delimiters}, \hyperpage{6}
-    \subitem {result}, \hyperpage{8}
-    \subitem {result\+\_\+dictionary}, \hyperpage{8}
-    \subitem {result\+\_\+file}, \hyperpage{8}
-    \subitem {result\+\_\+file\+\_\+name}, \hyperpage{8}
-    \subitem {sorted\+\_\+result}, \hyperpage{8}
-    \subitem {start}, \hyperpage{8}
-    \subitem {temp\+\_\+dictionary}, \hyperpage{8}
-    \subitem {text\+\_\+formatting}, \hyperpage{7}
-    \subitem {tf\+\_\+key}, \hyperpage{8}
-  \item {diff.\+py}, \hyperpage{9}
+    \subitem {create\+\_\+dict}, \hyperpage{6}
+    \subitem {diff}, \hyperpage{9}
+  \item {dict\+\_\+file}
+    \subitem {create\+\_\+dict}, \hyperpage{6}
+    \subitem {diff}, \hyperpage{9}
+  \item {diff}, \hyperpage{7}
+    \subitem {calculate\+\_\+distance}, \hyperpage{8}
+    \subitem {create\+\_\+dictionary}, \hyperpage{8}
+    \subitem {delimiters}, \hyperpage{9}
+    \subitem {dict\+\_\+file}, \hyperpage{9}
+    \subitem {document\+\_\+dictionary}, \hyperpage{9}
+    \subitem {document\+\_\+one\+\_\+dictionary}, \hyperpage{9}
+    \subitem {document\+\_\+two\+\_\+dictionary}, \hyperpage{9}
+    \subitem {document\+\_\+word\+\_\+count}, \hyperpage{9}
+    \subitem {end}, \hyperpage{9}
+    \subitem {ensure\+\_\+dir}, \hyperpage{8}
+    \subitem {file}, \hyperpage{10}
+    \subitem {file\+\_\+index}, \hyperpage{10}
+    \subitem {file\+\_\+index\+\_\+one}, \hyperpage{10}
+    \subitem {file\+\_\+index\+\_\+two}, \hyperpage{10}
+    \subitem {folder\+\_\+path}, \hyperpage{10}
+    \subitem {format\+\_\+text}, \hyperpage{8}
+    \subitem {idf\+\_\+key}, \hyperpage{10}
+    \subitem {inner\+\_\+product}, \hyperpage{8}
+    \subitem {output\+\_\+folder\+\_\+path}, \hyperpage{10}
+    \subitem {remove\+\_\+delimiters}, \hyperpage{8}
+    \subitem {result}, \hyperpage{10}
+    \subitem {result\+\_\+dictionary}, \hyperpage{10}
+    \subitem {result\+\_\+file}, \hyperpage{10}
+    \subitem {result\+\_\+file\+\_\+name}, \hyperpage{11}
+    \subitem {sorted\+\_\+result}, \hyperpage{11}
+    \subitem {start}, \hyperpage{11}
+    \subitem {temp\+\_\+dictionary}, \hyperpage{11}
+    \subitem {text\+\_\+formatting}, \hyperpage{9}
+    \subitem {text\+\_\+line}, \hyperpage{11}
+    \subitem {text\+\_\+line\+\_\+divided}, \hyperpage{11}
+    \subitem {tf\+\_\+key}, \hyperpage{11}
+  \item {diff.\+py}, \hyperpage{15}
   \item {document\+\_\+dictionary}
-    \subitem {diff}, \hyperpage{7}
+    \subitem {create\+\_\+dict}, \hyperpage{6}
+    \subitem {diff}, \hyperpage{9}
   \item {document\+\_\+one\+\_\+dictionary}
-    \subitem {diff}, \hyperpage{7}
+    \subitem {diff}, \hyperpage{9}
   \item {document\+\_\+two\+\_\+dictionary}
-    \subitem {diff}, \hyperpage{7}
+    \subitem {diff}, \hyperpage{9}
   \item {document\+\_\+word\+\_\+count}
-    \subitem {diff}, \hyperpage{7}
+    \subitem {create\+\_\+dict}, \hyperpage{6}
+    \subitem {diff}, \hyperpage{9}
 
   \indexspace
 
   \item {end}
-    \subitem {diff}, \hyperpage{7}
+    \subitem {create\+\_\+dict}, \hyperpage{6}
+    \subitem {diff}, \hyperpage{9}
+    \subitem {result}, \hyperpage{12}
   \item {ensure\+\_\+dir}
-    \subitem {diff}, \hyperpage{6}
+    \subitem {diff}, \hyperpage{8}
 
   \indexspace
 
   \item {file}
-    \subitem {diff}, \hyperpage{7}
+    \subitem {create\+\_\+dict}, \hyperpage{7}
+    \subitem {diff}, \hyperpage{10}
+    \subitem {result}, \hyperpage{12}
+  \item {file\+\_\+index}
+    \subitem {diff}, \hyperpage{10}
   \item {file\+\_\+index\+\_\+one}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {diff}, \hyperpage{10}
+  \item {file\+\_\+index\+\_\+two}
+    \subitem {diff}, \hyperpage{10}
+  \item {file\+\_\+name}
+    \subitem {result}, \hyperpage{12}
   \item {folder\+\_\+path}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {create\+\_\+dict}, \hyperpage{7}
+    \subitem {diff}, \hyperpage{10}
+    \subitem {result}, \hyperpage{12}
   \item {format\+\_\+text}
-    \subitem {diff}, \hyperpage{6}
+    \subitem {create\+\_\+dict}, \hyperpage{5}
+    \subitem {diff}, \hyperpage{8}
 
   \indexspace
 
   \item {idf\+\_\+key}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {diff}, \hyperpage{10}
   \item {inner\+\_\+product}
-    \subitem {diff}, \hyperpage{6}
+    \subitem {diff}, \hyperpage{8}
+
+  \indexspace
+
+  \item {key}
+    \subitem {create\+\_\+dict}, \hyperpage{7}
+    \subitem {result}, \hyperpage{12}
 
   \indexspace
 
   \item {output\+\_\+folder\+\_\+path}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {diff}, \hyperpage{10}
 
   \indexspace
 
   \item {remove\+\_\+delimiters}
-    \subitem {diff}, \hyperpage{6}
-  \item {result}
+    \subitem {create\+\_\+dict}, \hyperpage{6}
     \subitem {diff}, \hyperpage{8}
+  \item {res\+\_\+out\+\_\+file}
+    \subitem {result}, \hyperpage{13}
+  \item {result}, \hyperpage{11}
+    \subitem {calculate\+\_\+nearest}, \hyperpage{12}
+    \subitem {cur\+\_\+home\+\_\+dir}, \hyperpage{12}
+    \subitem {diff}, \hyperpage{10}
+    \subitem {end}, \hyperpage{12}
+    \subitem {file}, \hyperpage{12}
+    \subitem {file\+\_\+name}, \hyperpage{12}
+    \subitem {folder\+\_\+path}, \hyperpage{12}
+    \subitem {key}, \hyperpage{12}
+    \subitem {res\+\_\+out\+\_\+file}, \hyperpage{13}
+    \subitem {result\+\_\+dict}, \hyperpage{13}
+  \item {result.\+py}, \hyperpage{16}
+  \item {result\+\_\+dict}
+    \subitem {result}, \hyperpage{13}
   \item {result\+\_\+dictionary}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {diff}, \hyperpage{10}
   \item {result\+\_\+file}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {diff}, \hyperpage{10}
   \item {result\+\_\+file\+\_\+name}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {diff}, \hyperpage{11}
 
   \indexspace
 
   \item {sorted\+\_\+result}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {diff}, \hyperpage{11}
   \item {start}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {diff}, \hyperpage{11}
 
   \indexspace
 
   \item {temp\+\_\+dictionary}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {diff}, \hyperpage{11}
   \item {text\+\_\+formatting}
-    \subitem {diff}, \hyperpage{7}
+    \subitem {create\+\_\+dict}, \hyperpage{6}
+    \subitem {diff}, \hyperpage{9}
+  \item {text\+\_\+line}
+    \subitem {diff}, \hyperpage{11}
+  \item {text\+\_\+line\+\_\+divided}
+    \subitem {diff}, \hyperpage{11}
   \item {tf\+\_\+key}
-    \subitem {diff}, \hyperpage{8}
+    \subitem {diff}, \hyperpage{11}
 
 \end{theindex}

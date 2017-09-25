@@ -1,4 +1,6 @@
 var namespaces =
 [
-    [ "diff", "namespacediff.html", null ]
+    [ "create_dict", "namespacecreate__dict.html", null ],
+    [ "diff", "namespacediff.html", null ],
+    [ "result", "namespaceresult.html", null ]
 ];

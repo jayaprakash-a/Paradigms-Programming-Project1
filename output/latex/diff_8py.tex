@@ -8,36 +8,36 @@
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{namespacediff_af60a451d448d916b5326b02f0c96147e}{diff.\+remove\+\_\+delimiters} (text\+\_\+line)
-\item 
-def \hyperlink{namespacediff_a17722e85e83540a4710fa571f274e460}{diff.\+format\+\_\+text} (text\+\_\+line)
-\item 
-def \hyperlink{namespacediff_af7396fb95b2a175d067c1c73c75c49f6}{diff.\+create\+\_\+dictionary} (file\+\_\+path)
-\item 
 def \hyperlink{namespacediff_a3a1a3f01a48273670935a0fc45b8975f}{diff.\+inner\+\_\+product} (document\+\_\+one\+\_\+dictionary, document\+\_\+two\+\_\+dictionary)
 \item 
 def \hyperlink{namespacediff_a0b1fc82894743728455b31d3e9ec3671}{diff.\+calculate\+\_\+distance} (document\+\_\+one\+\_\+dictionary, document\+\_\+two\+\_\+dictionary)
-\item 
-def \hyperlink{namespacediff_aa2e19dbdbb5368eafd04b0cfe58c59a9}{diff.\+text\+\_\+formatting} (my\+\_\+dictionary)
 \item 
 def \hyperlink{namespacediff_ac7ecd54dde7759dd5569ffb765995278}{diff.\+ensure\+\_\+dir} (file\+\_\+path)
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-string \hyperlink{namespacediff_a46e2544bf0f797b8d42f4985d4b9bf0a}{diff.\+delimiters} = \char`\"{}\textbackslash{}\textquotesingle{}\textbackslash{}\char`\"{}/$<$?$>$,.\+:$\ast$-\/+\textbackslash{}\textbackslash{}=`$\sim$!@\#$^\wedge$\&()\+\_\+ ;\char`\"{}
+string \hyperlink{namespacediff_a46e2544bf0f797b8d42f4985d4b9bf0a}{diff.\+delimiters} = \char`\"{}\textbackslash{}\textquotesingle{}\textbackslash{}\char`\"{}/$<$?$>$,.\+:$\ast$-\/+\textbackslash{}\textbackslash{}=`$\sim$!@\#$^\wedge$\&()\+\_\+ ;\{\}\mbox{[}$\,$\mbox{]}$\vert$\char`\"{}
 \item 
 dictionary \hyperlink{namespacediff_af16edaaafe4787892cb925870fd0d108}{diff.\+document\+\_\+word\+\_\+count} = \{\}
 \item 
 \hyperlink{namespacediff_ac1dbbabcf481dbdd8253f435c6841b59}{diff.\+start} = time.\+clock()
 \item 
-\hyperlink{namespacediff_adccd64c100d50ed0e87d46c33e8636eb}{diff.\+folder\+\_\+path} = raw\+\_\+input(\char`\"{}Please input the path to the folder\char`\"{})
+\hyperlink{namespacediff_adccd64c100d50ed0e87d46c33e8636eb}{diff.\+folder\+\_\+path} = raw\+\_\+input(\char`\"{}Please input the path to the folder\textbackslash{}t\char`\"{})
 \item 
 dictionary \hyperlink{namespacediff_a7d02a567fcd601900d3960bef0191cea}{diff.\+document\+\_\+dictionary} = \{\}
 \item 
-\hyperlink{namespacediff_aed454348ccff9ceb835a6c22de15fa95}{diff.\+output\+\_\+folder\+\_\+path} = raw\+\_\+input(\char`\"{}Please input the path to the output folder\char`\"{})
+\hyperlink{namespacediff_aed454348ccff9ceb835a6c22de15fa95}{diff.\+output\+\_\+folder\+\_\+path} = raw\+\_\+input(\char`\"{}Please input the path to the output folder\textbackslash{}t\char`\"{})
 \item 
 dictionary \hyperlink{namespacediff_a08d29f91abd1bc75aa7d8ecb3aa39c91}{diff.\+result\+\_\+dictionary} = \{\}
+\item 
+\hyperlink{namespacediff_a9b7319edd5fe67e6804984652b758844}{diff.\+temp}
+\item 
+\hyperlink{namespacediff_a1c4dd03a1a71df999349462c9dd9994d}{diff.\+dict\+\_\+file} = open(\textquotesingle{}dict.\+txt\textquotesingle{},\textquotesingle{}r\textquotesingle{})
+\item 
+\hyperlink{namespacediff_afec29e46f49378a5b7b3495eecdb5e55}{diff.\+text\+\_\+line} = text\+\_\+line.\+rstrip()
+\item 
+\hyperlink{namespacediff_ac8b8b94593712a4b907001ab1fa122c7}{diff.\+text\+\_\+line\+\_\+divided} = text\+\_\+line.\+split(\textquotesingle{} \textquotesingle{})
 \item 
 dictionary \hyperlink{namespacediff_aca04823d91158ba2b053d46e3550516d}{diff.\+temp\+\_\+dictionary} = \{\}
 \item 
@@ -45,19 +45,23 @@ dictionary \hyperlink{namespacediff_aca04823d91158ba2b053d46e3550516d}{diff.\+te
 \item 
 \hyperlink{namespacediff_ab860e167471d632882c770f12e87927e}{diff.\+tf\+\_\+key} = document\+\_\+dictionary\mbox{[}filename\mbox{]}\mbox{[}key\mbox{]}
 \item 
+\hyperlink{namespacediff_a9c223d5f0415c68743de6a689c3bea0b}{diff.\+file\+\_\+index} = os.\+listdir(folder\+\_\+path)
+\item 
+\hyperlink{namespacediff_ac8ee8a35e457d5004c0f85b0383faf26}{diff.\+file\+\_\+index\+\_\+one} = file\+\_\+index\mbox{[}index\+\_\+one\mbox{]}
+\item 
+\hyperlink{namespacediff_a6f1ee631f8bf5af8ef567c3e029b0e6b}{diff.\+file\+\_\+index\+\_\+two} = file\+\_\+index\mbox{[}index\+\_\+two\mbox{]}
+\item 
 \hyperlink{namespacediff_aa4da046a613de2dafe03d105bca31694}{diff.\+document\+\_\+one\+\_\+dictionary} = document\+\_\+dictionary\mbox{[}file\+\_\+index\+\_\+one\mbox{]}
 \item 
 \hyperlink{namespacediff_a00ac707250a54a82a970c2bb2acf736a}{diff.\+document\+\_\+two\+\_\+dictionary} = document\+\_\+dictionary\mbox{[}file\+\_\+index\+\_\+two\mbox{]}
 \item 
 \hyperlink{namespacediff_a5df2e8041c6fff30558b49edee35438a}{diff.\+result} = calculate\+\_\+distance(document\+\_\+one\+\_\+dictionary, document\+\_\+two\+\_\+dictionary)
 \item 
-\hyperlink{namespacediff_ac8ee8a35e457d5004c0f85b0383faf26}{diff.\+file\+\_\+index\+\_\+one}
-\item 
 \hyperlink{namespacediff_a2839fdf2e0df35c347f0649098c5ecdc}{diff.\+end}
 \item 
 \hyperlink{namespacediff_a3b4c2771da02846b61219801d8016b40}{diff.\+sorted\+\_\+result} = sorted(result\+\_\+dictionary.\+items(), key=operator.\+itemgetter(1))
 \item 
-\hyperlink{namespacediff_a15a863df81a6f3099b088f9f52808389}{diff.\+result\+\_\+file\+\_\+name} = raw\+\_\+input(\char`\"{}Please enter the name of file where you wish to save the result.\char`\"{})
+\hyperlink{namespacediff_a15a863df81a6f3099b088f9f52808389}{diff.\+result\+\_\+file\+\_\+name} = raw\+\_\+input(\char`\"{}Please enter the name of file where you wish to save the result.\textbackslash{}t\char`\"{})
 \item 
 \hyperlink{namespacediff_aa1be62f435ce37ca93ba61d4ad88c0c9}{diff.\+result\+\_\+file} = open(result\+\_\+file\+\_\+name ,\textquotesingle{}w\textquotesingle{})
 \item 

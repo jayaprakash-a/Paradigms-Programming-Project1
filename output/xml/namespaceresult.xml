@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceresult" kind="namespace" language="Python">
+    <compoundname>result</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceresult_1a28b7e2030adf7744b4ff42da31c0a58a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>result.folder_path</definition>
+        <argsstring></argsstring>
+        <name>folder_path</name>
+        <initializer>= raw_input(&quot;Please input the path to the folder\t&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="result.py" line="48" column="1" bodyfile="result.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceresult_1ad84b525edcc6cfe3f42a724ad9631920" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>result.cur_home_dir</definition>
+        <argsstring></argsstring>
+        <name>cur_home_dir</name>
+        <initializer>= os.getcwd()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="result.py" line="49" column="1" bodyfile="result.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceresult_1acf51e2242cbe71fdb781f378dd1b08f8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>result.file_name</definition>
+        <argsstring></argsstring>
+        <name>file_name</name>
+        <initializer>= raw_input(&quot;Please input the name of result file.\t&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="result.py" line="52" column="1" bodyfile="result.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceresult_1ac6537f54ad765b7bd38c3ac05ba11853" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>result.result_dict</definition>
+        <argsstring></argsstring>
+        <name>result_dict</name>
+        <initializer>= <ref refid="namespaceresult_1a701c28db119049562d7d29ca31055c29" kindref="member">calculate_nearest</ref>(<ref refid="namespaceresult_1acf51e2242cbe71fdb781f378dd1b08f8" kindref="member">file_name</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="result.py" line="53" column="1" bodyfile="result.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceresult_1a3e9c34d216aa54944d35a8d48a885ee9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>result.res_out_file</definition>
+        <argsstring></argsstring>
+        <name>res_out_file</name>
+        <initializer>= open(&apos;eval_res-nearest&apos;, &apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="result.py" line="57" column="1" bodyfile="result.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceresult_1a37523b375176c9d24964d26e915bce32" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>result.key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="result.py" line="59" column="1" bodyfile="result.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceresult_1a1e68669dab0e16d7d2c66523354a8045" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>result.end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="result.py" line="59" column="1" bodyfile="result.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceresult_1ae5575afe3471c44d58e35b68ecc4a82f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>result.file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="result.py" line="59" column="1" bodyfile="result.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceresult_1a701c28db119049562d7d29ca31055c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def result.calculate_nearest</definition>
+        <argsstring>(file_name)</argsstring>
+        <name>calculate_nearest</name>
+        <param>
+          <type><ref refid="namespaceresult_1acf51e2242cbe71fdb781f378dd1b08f8" kindref="member">file_name</ref></type>
+          <defname>file_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Function name : calculate_nearest
+Input arguments :
+    1. string file_name : Name of file that conatins result
+Purpose : To find the nearest file of each and every file 
+Return Value : The dictionary containing the nearest file index of each file
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="result.py" line="16" column="1" bodyfile="result.py" bodystart="16" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="result.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

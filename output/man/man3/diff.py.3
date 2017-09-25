@@ -1,4 +1,4 @@
-.TH "diff.py" 3 "Wed Sep 13 2017" "Version 1" "MyProject" \" -*- nroff -*-
+.TH "diff.py" 3 "Mon Sep 25 2017" "Version 1" "MyProject" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -17,22 +17,10 @@ diff.py \-
 
 .in +1c
 .ti -1c
-.RI "def \fBdiff\&.remove_delimiters\fP (text_line)"
-.br
-.ti -1c
-.RI "def \fBdiff\&.format_text\fP (text_line)"
-.br
-.ti -1c
-.RI "def \fBdiff\&.create_dictionary\fP (file_path)"
-.br
-.ti -1c
 .RI "def \fBdiff\&.inner_product\fP (document_one_dictionary, document_two_dictionary)"
 .br
 .ti -1c
 .RI "def \fBdiff\&.calculate_distance\fP (document_one_dictionary, document_two_dictionary)"
-.br
-.ti -1c
-.RI "def \fBdiff\&.text_formatting\fP (my_dictionary)"
 .br
 .ti -1c
 .RI "def \fBdiff\&.ensure_dir\fP (file_path)"
@@ -42,7 +30,7 @@ diff.py \-
 
 .in +1c
 .ti -1c
-.RI "string \fBdiff\&.delimiters\fP = '\\'\\'/<?>,\&.:*\-+\\\\=`~!@#^&()_ ;'"
+.RI "string \fBdiff\&.delimiters\fP = '\\'\\'/<?>,\&.:*\-+\\\\=`~!@#^&()_ ;{}[]|'"
 .br
 .ti -1c
 .RI "dictionary \fBdiff\&.document_word_count\fP = {}"
@@ -51,16 +39,28 @@ diff.py \-
 .RI "\fBdiff\&.start\fP = time\&.clock()"
 .br
 .ti -1c
-.RI "\fBdiff\&.folder_path\fP = raw_input('Please input the path to the folder')"
+.RI "\fBdiff\&.folder_path\fP = raw_input('Please input the path to the folder\\t')"
 .br
 .ti -1c
 .RI "dictionary \fBdiff\&.document_dictionary\fP = {}"
 .br
 .ti -1c
-.RI "\fBdiff\&.output_folder_path\fP = raw_input('Please input the path to the output folder')"
+.RI "\fBdiff\&.output_folder_path\fP = raw_input('Please input the path to the output folder\\t')"
 .br
 .ti -1c
 .RI "dictionary \fBdiff\&.result_dictionary\fP = {}"
+.br
+.ti -1c
+.RI "\fBdiff\&.temp\fP"
+.br
+.ti -1c
+.RI "\fBdiff\&.dict_file\fP = open('dict\&.txt','r')"
+.br
+.ti -1c
+.RI "\fBdiff\&.text_line\fP = text_line\&.rstrip()"
+.br
+.ti -1c
+.RI "\fBdiff\&.text_line_divided\fP = text_line\&.split(' ')"
 .br
 .ti -1c
 .RI "dictionary \fBdiff\&.temp_dictionary\fP = {}"
@@ -72,6 +72,15 @@ diff.py \-
 .RI "\fBdiff\&.tf_key\fP = document_dictionary[filename][key]"
 .br
 .ti -1c
+.RI "\fBdiff\&.file_index\fP = os\&.listdir(folder_path)"
+.br
+.ti -1c
+.RI "\fBdiff\&.file_index_one\fP = file_index[index_one]"
+.br
+.ti -1c
+.RI "\fBdiff\&.file_index_two\fP = file_index[index_two]"
+.br
+.ti -1c
 .RI "\fBdiff\&.document_one_dictionary\fP = document_dictionary[file_index_one]"
 .br
 .ti -1c
@@ -81,16 +90,13 @@ diff.py \-
 .RI "\fBdiff\&.result\fP = calculate_distance(document_one_dictionary, document_two_dictionary)"
 .br
 .ti -1c
-.RI "\fBdiff\&.file_index_one\fP"
-.br
-.ti -1c
 .RI "\fBdiff\&.end\fP"
 .br
 .ti -1c
 .RI "\fBdiff\&.sorted_result\fP = sorted(result_dictionary\&.items(), key=operator\&.itemgetter(1))"
 .br
 .ti -1c
-.RI "\fBdiff\&.result_file_name\fP = raw_input('Please enter the name of file where you wish to save the result\&.')"
+.RI "\fBdiff\&.result_file_name\fP = raw_input('Please enter the name of file where you wish to save the result\&.\\t')"
 .br
 .ti -1c
 .RI "\fBdiff\&.result_file\fP = open(result_file_name ,'w')"

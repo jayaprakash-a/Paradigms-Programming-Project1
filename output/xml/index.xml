@@ -1,5 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="namespacecreate__dict" kind="namespace"><name>create_dict</name>
+    <member refid="namespacecreate__dict_1ae4975e370ff334361b3a0938678c09f6" kind="variable"><name>delimiters</name></member>
+    <member refid="namespacecreate__dict_1a94c0ed0928396d28700235a31621124f" kind="variable"><name>folder_path</name></member>
+    <member refid="namespacecreate__dict_1a523b5abb183f92cbb473ab778d8c7d9f" kind="variable"><name>document_dictionary</name></member>
+    <member refid="namespacecreate__dict_1afb09c644d11be14d22d9c194ce8904fb" kind="variable"><name>document_word_count</name></member>
+    <member refid="namespacecreate__dict_1ac24c44c9b8b29bc8a8411916d7a6b349" kind="variable"><name>dict_file</name></member>
+    <member refid="namespacecreate__dict_1aef9478241bf84f48b590aab0c0bbfc63" kind="variable"><name>key</name></member>
+    <member refid="namespacecreate__dict_1ad4b19f0708a580bdf8ef5f3b5a08d1d2" kind="variable"><name>end</name></member>
+    <member refid="namespacecreate__dict_1a0384d7d11a827e9e7084abff1ac79190" kind="variable"><name>file</name></member>
+  </compound>
   <compound refid="namespacediff" kind="namespace"><name>diff</name>
     <member refid="namespacediff_1a46e2544bf0f797b8d42f4985d4b9bf0a" kind="variable"><name>delimiters</name></member>
     <member refid="namespacediff_1af16edaaafe4787892cb925870fd0d108" kind="variable"><name>document_word_count</name></member>
@@ -8,26 +18,43 @@
     <member refid="namespacediff_1a7d02a567fcd601900d3960bef0191cea" kind="variable"><name>document_dictionary</name></member>
     <member refid="namespacediff_1aed454348ccff9ceb835a6c22de15fa95" kind="variable"><name>output_folder_path</name></member>
     <member refid="namespacediff_1a08d29f91abd1bc75aa7d8ecb3aa39c91" kind="variable"><name>result_dictionary</name></member>
+    <member refid="namespacediff_1a9b7319edd5fe67e6804984652b758844" kind="variable"><name>temp</name></member>
+    <member refid="namespacediff_1a1c4dd03a1a71df999349462c9dd9994d" kind="variable"><name>dict_file</name></member>
+    <member refid="namespacediff_1afec29e46f49378a5b7b3495eecdb5e55" kind="variable"><name>text_line</name></member>
+    <member refid="namespacediff_1ac8b8b94593712a4b907001ab1fa122c7" kind="variable"><name>text_line_divided</name></member>
     <member refid="namespacediff_1aca04823d91158ba2b053d46e3550516d" kind="variable"><name>temp_dictionary</name></member>
     <member refid="namespacediff_1a1798972d3d6361a79c16d8470bf3471d" kind="variable"><name>idf_key</name></member>
     <member refid="namespacediff_1ab860e167471d632882c770f12e87927e" kind="variable"><name>tf_key</name></member>
+    <member refid="namespacediff_1a9c223d5f0415c68743de6a689c3bea0b" kind="variable"><name>file_index</name></member>
+    <member refid="namespacediff_1ac8ee8a35e457d5004c0f85b0383faf26" kind="variable"><name>file_index_one</name></member>
+    <member refid="namespacediff_1a6f1ee631f8bf5af8ef567c3e029b0e6b" kind="variable"><name>file_index_two</name></member>
     <member refid="namespacediff_1aa4da046a613de2dafe03d105bca31694" kind="variable"><name>document_one_dictionary</name></member>
     <member refid="namespacediff_1a00ac707250a54a82a970c2bb2acf736a" kind="variable"><name>document_two_dictionary</name></member>
     <member refid="namespacediff_1a5df2e8041c6fff30558b49edee35438a" kind="variable"><name>result</name></member>
-    <member refid="namespacediff_1ac8ee8a35e457d5004c0f85b0383faf26" kind="variable"><name>file_index_one</name></member>
     <member refid="namespacediff_1a2839fdf2e0df35c347f0649098c5ecdc" kind="variable"><name>end</name></member>
     <member refid="namespacediff_1a3b4c2771da02846b61219801d8016b40" kind="variable"><name>sorted_result</name></member>
     <member refid="namespacediff_1a15a863df81a6f3099b088f9f52808389" kind="variable"><name>result_file_name</name></member>
     <member refid="namespacediff_1aa1be62f435ce37ca93ba61d4ad88c0c9" kind="variable"><name>result_file</name></member>
     <member refid="namespacediff_1a3759e132757b6fdecd117a665d6158ab" kind="variable"><name>file</name></member>
-    <member refid="namespacediff_1af60a451d448d916b5326b02f0c96147e" kind="function"><name>remove_delimiters</name></member>
-    <member refid="namespacediff_1a17722e85e83540a4710fa571f274e460" kind="function"><name>format_text</name></member>
-    <member refid="namespacediff_1af7396fb95b2a175d067c1c73c75c49f6" kind="function"><name>create_dictionary</name></member>
     <member refid="namespacediff_1a3a1a3f01a48273670935a0fc45b8975f" kind="function"><name>inner_product</name></member>
     <member refid="namespacediff_1a0b1fc82894743728455b31d3e9ec3671" kind="function"><name>calculate_distance</name></member>
-    <member refid="namespacediff_1aa2e19dbdbb5368eafd04b0cfe58c59a9" kind="function"><name>text_formatting</name></member>
     <member refid="namespacediff_1ac7ecd54dde7759dd5569ffb765995278" kind="function"><name>ensure_dir</name></member>
   </compound>
+  <compound refid="namespaceresult" kind="namespace"><name>result</name>
+    <member refid="namespaceresult_1a28b7e2030adf7744b4ff42da31c0a58a" kind="variable"><name>folder_path</name></member>
+    <member refid="namespaceresult_1ad84b525edcc6cfe3f42a724ad9631920" kind="variable"><name>cur_home_dir</name></member>
+    <member refid="namespaceresult_1acf51e2242cbe71fdb781f378dd1b08f8" kind="variable"><name>file_name</name></member>
+    <member refid="namespaceresult_1ac6537f54ad765b7bd38c3ac05ba11853" kind="variable"><name>result_dict</name></member>
+    <member refid="namespaceresult_1a3e9c34d216aa54944d35a8d48a885ee9" kind="variable"><name>res_out_file</name></member>
+    <member refid="namespaceresult_1a37523b375176c9d24964d26e915bce32" kind="variable"><name>key</name></member>
+    <member refid="namespaceresult_1a1e68669dab0e16d7d2c66523354a8045" kind="variable"><name>end</name></member>
+    <member refid="namespaceresult_1ae5575afe3471c44d58e35b68ecc4a82f" kind="variable"><name>file</name></member>
+    <member refid="namespaceresult_1a701c28db119049562d7d29ca31055c29" kind="function"><name>calculate_nearest</name></member>
+  </compound>
+  <compound refid="create__dict_8py" kind="file"><name>create_dict.py</name>
+  </compound>
   <compound refid="diff_8py" kind="file"><name>diff.py</name>
+  </compound>
+  <compound refid="result_8py" kind="file"><name>result.py</name>
   </compound>
 </doxygenindex>

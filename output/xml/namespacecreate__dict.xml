@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacecreate__dict" kind="namespace" language="Python">
+    <compoundname>create_dict</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecreate__dict_1ae4975e370ff334361b3a0938678c09f6" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string create_dict.delimiters</definition>
+        <argsstring></argsstring>
+        <name>delimiters</name>
+        <initializer>= &quot;\&apos;\&quot;/&lt;?&gt;,.:*-+\\=`~!@#^&amp;()_ ;{}[]|&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="create_dict.py" line="18" column="1" bodyfile="create_dict.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecreate__dict_1a94c0ed0928396d28700235a31621124f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>create_dict.folder_path</definition>
+        <argsstring></argsstring>
+        <name>folder_path</name>
+        <initializer>= raw_input(&quot;Please input the path to the folder\t&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="create_dict.py" line="24" column="1" bodyfile="create_dict.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecreate__dict_1a523b5abb183f92cbb473ab778d8c7d9f" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary create_dict.document_dictionary</definition>
+        <argsstring></argsstring>
+        <name>document_dictionary</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="create_dict.py" line="25" column="1" bodyfile="create_dict.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecreate__dict_1afb09c644d11be14d22d9c194ce8904fb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>create_dict.document_word_count</definition>
+        <argsstring></argsstring>
+        <name>document_word_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="create_dict.py" line="30" column="1" bodyfile="create_dict.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecreate__dict_1ac24c44c9b8b29bc8a8411916d7a6b349" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>create_dict.dict_file</definition>
+        <argsstring></argsstring>
+        <name>dict_file</name>
+        <initializer>= open(&apos;dict.txt&apos;,&apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="create_dict.py" line="33" column="1" bodyfile="create_dict.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecreate__dict_1aef9478241bf84f48b590aab0c0bbfc63" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>create_dict.key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="create_dict.py" line="35" column="1" bodyfile="create_dict.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecreate__dict_1ad4b19f0708a580bdf8ef5f3b5a08d1d2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>create_dict.end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="create_dict.py" line="35" column="1" bodyfile="create_dict.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecreate__dict_1a0384d7d11a827e9e7084abff1ac79190" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>create_dict.file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="create_dict.py" line="35" column="1" bodyfile="create_dict.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="create_dict.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
