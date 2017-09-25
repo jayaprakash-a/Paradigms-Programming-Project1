@@ -14,7 +14,7 @@
 
 ## Contents Of The Repository
 * diff.py  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The file that calculates the distance between two documents
-* create_dict.py  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Creates the global dictionary of words
+* create_dict.py  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Creates the global dictionary of words
 * dict_functions.py &nbsp;&nbsp;&nbsp;&nbsp; Contains all functions required for text processsing to create wor dictionary
 * result.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contains code to ontain the nearest file of each and every file
 * /output   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the documentation of the project
