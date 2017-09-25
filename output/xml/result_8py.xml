@@ -26,7 +26,7 @@
 <codeline lineno="16" refid="namespaceresult_1a701c28db119049562d7d29ca31055c29" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceresult_1a701c28db119049562d7d29ca31055c29" kindref="member">calculate_nearest</ref>(file_name):</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>Function<sp/>name<sp/>:<sp/>calculate_nearest</highlight></codeline>
 <codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Input<sp/>arguments<sp/>:</highlight></codeline>
-<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>string<sp/>file_name<sp/>:<sp/>Name<sp/>of<sp/>file<sp/>that<sp/>conatins<sp/>result</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>string<sp/>file_name<sp/>:<sp/>Name<sp/>of<sp/>file<sp/>that<sp/>contains<sp/>result</highlight></codeline>
 <codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Purpose<sp/>:<sp/>To<sp/>find<sp/>the<sp/>nearest<sp/>file<sp/>of<sp/>each<sp/>and<sp/>every<sp/>file<sp/></highlight></codeline>
 <codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>Value<sp/>:<sp/>The<sp/>dictionary<sp/>containing<sp/>the<sp/>nearest<sp/>file<sp/>index<sp/>of<sp/>each<sp/>file</highlight></codeline>
 <codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -71,7 +71,7 @@
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>res_out_file.close()</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Results<sp/>have<sp/>been<sp/>logged<sp/>to<sp/>file&quot;</highlight><highlight class="normal">)</highlight></codeline>
     </programlisting>
     <location file="result.py"/>
   </compounddef>

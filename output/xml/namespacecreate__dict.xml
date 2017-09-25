@@ -46,17 +46,18 @@
         <location file="create_dict.py" line="25" column="1" bodyfile="create_dict.py" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacecreate__dict_1afb09c644d11be14d22d9c194ce8904fb" prot="public" static="no" mutable="no">
-        <type></type>
+        <type>dictionary</type>
         <definition>create_dict.document_word_count</definition>
         <argsstring></argsstring>
         <name>document_word_count</name>
+        <initializer>= {}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="create_dict.py" line="30" column="1" bodyfile="create_dict.py" bodystart="30" bodyend="-1"/>
+        <location file="create_dict.py" line="26" column="1" bodyfile="create_dict.py" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacecreate__dict_1ac24c44c9b8b29bc8a8411916d7a6b349" prot="public" static="no" mutable="no">
         <type></type>
@@ -70,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="create_dict.py" line="33" column="1" bodyfile="create_dict.py" bodystart="33" bodyend="-1"/>
+        <location file="create_dict.py" line="34" column="1" bodyfile="create_dict.py" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacecreate__dict_1aef9478241bf84f48b590aab0c0bbfc63" prot="public" static="no" mutable="no">
         <type></type>
@@ -83,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="create_dict.py" line="35" column="1" bodyfile="create_dict.py" bodystart="35" bodyend="-1"/>
+        <location file="create_dict.py" line="36" column="1" bodyfile="create_dict.py" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacecreate__dict_1ad4b19f0708a580bdf8ef5f3b5a08d1d2" prot="public" static="no" mutable="no">
         <type></type>
@@ -96,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="create_dict.py" line="35" column="1" bodyfile="create_dict.py" bodystart="35" bodyend="-1"/>
+        <location file="create_dict.py" line="36" column="1" bodyfile="create_dict.py" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacecreate__dict_1a0384d7d11a827e9e7084abff1ac79190" prot="public" static="no" mutable="no">
         <type></type>
@@ -109,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="create_dict.py" line="35" column="1" bodyfile="create_dict.py" bodystart="35" bodyend="-1"/>
+        <location file="create_dict.py" line="36" column="1" bodyfile="create_dict.py" bodystart="36" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

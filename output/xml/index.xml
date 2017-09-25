@@ -10,6 +10,13 @@
     <member refid="namespacecreate__dict_1ad4b19f0708a580bdf8ef5f3b5a08d1d2" kind="variable"><name>end</name></member>
     <member refid="namespacecreate__dict_1a0384d7d11a827e9e7084abff1ac79190" kind="variable"><name>file</name></member>
   </compound>
+  <compound refid="namespacedict__functions" kind="namespace"><name>dict_functions</name>
+    <member refid="namespacedict__functions_1a5b7d5eaf2a87a18bae901c297cd2f249" kind="variable"><name>delimiters</name></member>
+    <member refid="namespacedict__functions_1a49acb876cdee9d72c58256b23fbc15e5" kind="function"><name>remove_delimiters</name></member>
+    <member refid="namespacedict__functions_1adaacb8f2bf31cd2d1532598c788974c3" kind="function"><name>format_text</name></member>
+    <member refid="namespacedict__functions_1a31a6b118b13f4aa6066759aa4cf43959" kind="function"><name>create_dictionary</name></member>
+    <member refid="namespacedict__functions_1abb4baa4822ccfeb9ec8c59b7acb7ee3b" kind="function"><name>text_formatting</name></member>
+  </compound>
   <compound refid="namespacediff" kind="namespace"><name>diff</name>
     <member refid="namespacediff_1a46e2544bf0f797b8d42f4985d4b9bf0a" kind="variable"><name>delimiters</name></member>
     <member refid="namespacediff_1af16edaaafe4787892cb925870fd0d108" kind="variable"><name>document_word_count</name></member>
@@ -52,6 +59,8 @@
     <member refid="namespaceresult_1a701c28db119049562d7d29ca31055c29" kind="function"><name>calculate_nearest</name></member>
   </compound>
   <compound refid="create__dict_8py" kind="file"><name>create_dict.py</name>
+  </compound>
+  <compound refid="dict__functions_8py" kind="file"><name>dict_functions.py</name>
   </compound>
   <compound refid="diff_8py" kind="file"><name>diff.py</name>
   </compound>

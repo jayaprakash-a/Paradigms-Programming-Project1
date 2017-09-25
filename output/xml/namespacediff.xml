@@ -102,17 +102,18 @@
         <location file="diff.py" line="77" column="1" bodyfile="diff.py" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a9b7319edd5fe67e6804984652b758844" prot="public" static="no" mutable="no">
-        <type></type>
+        <type>dictionary</type>
         <definition>diff.temp</definition>
         <argsstring></argsstring>
         <name>temp</name>
+        <initializer>= {}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="80" column="1" bodyfile="diff.py" bodystart="80" bodyend="-1"/>
+        <location file="diff.py" line="78" column="1" bodyfile="diff.py" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a1c4dd03a1a71df999349462c9dd9994d" prot="public" static="no" mutable="no">
         <type></type>
@@ -126,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="82" column="1" bodyfile="diff.py" bodystart="82" bodyend="-1"/>
+        <location file="diff.py" line="83" column="1" bodyfile="diff.py" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1afec29e46f49378a5b7b3495eecdb5e55" prot="public" static="no" mutable="no">
         <type></type>
@@ -140,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="84" column="1" bodyfile="diff.py" bodystart="84" bodyend="-1"/>
+        <location file="diff.py" line="85" column="1" bodyfile="diff.py" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1ac8b8b94593712a4b907001ab1fa122c7" prot="public" static="no" mutable="no">
         <type></type>
@@ -154,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="85" column="1" bodyfile="diff.py" bodystart="85" bodyend="-1"/>
+        <location file="diff.py" line="86" column="1" bodyfile="diff.py" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1aca04823d91158ba2b053d46e3550516d" prot="public" static="no" mutable="no">
         <type>dictionary</type>
@@ -168,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="91" column="1" bodyfile="diff.py" bodystart="91" bodyend="-1"/>
+        <location file="diff.py" line="92" column="1" bodyfile="diff.py" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a1798972d3d6361a79c16d8470bf3471d" prot="public" static="no" mutable="no">
         <type></type>
@@ -182,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="95" column="1" bodyfile="diff.py" bodystart="95" bodyend="-1"/>
+        <location file="diff.py" line="96" column="1" bodyfile="diff.py" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1ab860e167471d632882c770f12e87927e" prot="public" static="no" mutable="no">
         <type></type>
@@ -196,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="96" column="1" bodyfile="diff.py" bodystart="96" bodyend="-1"/>
+        <location file="diff.py" line="97" column="1" bodyfile="diff.py" bodystart="97" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a9c223d5f0415c68743de6a689c3bea0b" prot="public" static="no" mutable="no">
         <type></type>
@@ -210,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="102" column="1" bodyfile="diff.py" bodystart="102" bodyend="-1"/>
+        <location file="diff.py" line="103" column="1" bodyfile="diff.py" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1ac8ee8a35e457d5004c0f85b0383faf26" prot="public" static="no" mutable="no">
         <type></type>
@@ -224,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="107" column="1" bodyfile="diff.py" bodystart="107" bodyend="-1"/>
+        <location file="diff.py" line="108" column="1" bodyfile="diff.py" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a6f1ee631f8bf5af8ef567c3e029b0e6b" prot="public" static="no" mutable="no">
         <type></type>
@@ -238,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="108" column="1" bodyfile="diff.py" bodystart="108" bodyend="-1"/>
+        <location file="diff.py" line="109" column="1" bodyfile="diff.py" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1aa4da046a613de2dafe03d105bca31694" prot="public" static="no" mutable="no">
         <type></type>
@@ -252,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="110" column="1" bodyfile="diff.py" bodystart="110" bodyend="-1"/>
+        <location file="diff.py" line="111" column="1" bodyfile="diff.py" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a00ac707250a54a82a970c2bb2acf736a" prot="public" static="no" mutable="no">
         <type></type>
@@ -266,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="112" column="1" bodyfile="diff.py" bodystart="112" bodyend="-1"/>
+        <location file="diff.py" line="113" column="1" bodyfile="diff.py" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a5df2e8041c6fff30558b49edee35438a" prot="public" static="no" mutable="no">
         <type></type>
@@ -280,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="114" column="1" bodyfile="diff.py" bodystart="114" bodyend="-1"/>
+        <location file="diff.py" line="115" column="1" bodyfile="diff.py" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a2839fdf2e0df35c347f0649098c5ecdc" prot="public" static="no" mutable="no">
         <type></type>
@@ -293,7 +294,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="116" column="1" bodyfile="diff.py" bodystart="116" bodyend="-1"/>
+        <location file="diff.py" line="117" column="1" bodyfile="diff.py" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a3b4c2771da02846b61219801d8016b40" prot="public" static="no" mutable="no">
         <type></type>
@@ -307,7 +308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="122" column="1" bodyfile="diff.py" bodystart="122" bodyend="-1"/>
+        <location file="diff.py" line="123" column="1" bodyfile="diff.py" bodystart="123" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a15a863df81a6f3099b088f9f52808389" prot="public" static="no" mutable="no">
         <type></type>
@@ -321,7 +322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="126" column="1" bodyfile="diff.py" bodystart="126" bodyend="-1"/>
+        <location file="diff.py" line="127" column="1" bodyfile="diff.py" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1aa1be62f435ce37ca93ba61d4ad88c0c9" prot="public" static="no" mutable="no">
         <type></type>
@@ -335,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="127" column="1" bodyfile="diff.py" bodystart="127" bodyend="-1"/>
+        <location file="diff.py" line="128" column="1" bodyfile="diff.py" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacediff_1a3759e132757b6fdecd117a665d6158ab" prot="public" static="no" mutable="no">
         <type></type>
@@ -348,7 +349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="diff.py" line="129" column="1" bodyfile="diff.py" bodystart="129" bodyend="-1"/>
+        <location file="diff.py" line="130" column="1" bodyfile="diff.py" bodystart="130" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
