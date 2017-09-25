@@ -1,0 +1,101 @@
+\hypertarget{namespacedict__functions}{}\section{dict\+\_\+functions Namespace Reference}
+\label{namespacedict__functions}\index{dict\+\_\+functions@{dict\+\_\+functions}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacedict__functions_a49acb876cdee9d72c58256b23fbc15e5}{remove\+\_\+delimiters} (text\+\_\+line)
+\item 
+def \hyperlink{namespacedict__functions_adaacb8f2bf31cd2d1532598c788974c3}{format\+\_\+text} (text\+\_\+line)
+\item 
+def \hyperlink{namespacedict__functions_a31a6b118b13f4aa6066759aa4cf43959}{create\+\_\+dictionary} (file\+\_\+path, document\+\_\+word\+\_\+count)
+\item 
+def \hyperlink{namespacedict__functions_abb4baa4822ccfeb9ec8c59b7acb7ee3b}{text\+\_\+formatting} (my\+\_\+dictionary)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacedict__functions_a5b7d5eaf2a87a18bae901c297cd2f249}{delimiters} = \char`\"{}\textbackslash{}\textquotesingle{}\textbackslash{}\char`\"{}/$<$?$>$,.\+:$\ast$-\/+\textbackslash{}\textbackslash{}=`$\sim$!@\#$^\wedge$\&()\+\_\+ ;\{\}\mbox{[}$\,$\mbox{]}$\vert$\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{dict\+\_\+functions@{dict\+\_\+functions}!create\+\_\+dictionary@{create\+\_\+dictionary}}
+\index{create\+\_\+dictionary@{create\+\_\+dictionary}!dict\+\_\+functions@{dict\+\_\+functions}}
+\subsubsection[{\texorpdfstring{create\+\_\+dictionary(file\+\_\+path, document\+\_\+word\+\_\+count)}{create_dictionary(file_path, document_word_count)}}]{\setlength{\rightskip}{0pt plus 5cm}def dict\+\_\+functions.\+create\+\_\+dictionary (
+\begin{DoxyParamCaption}
+\item[{}]{file\+\_\+path, }
+\item[{}]{document\+\_\+word\+\_\+count}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedict__functions_a31a6b118b13f4aa6066759aa4cf43959}{}\label{namespacedict__functions_a31a6b118b13f4aa6066759aa4cf43959}
+\begin{DoxyVerb}Function name : create_dictionary
+Input arguments :
+    1. string file_path : The path to the file to be read.
+    2. dictionary document_word_count : The dicitonary responsible for training
+Purpose : To create the word frequency table/ vector
+Return Value : The dictionary containing the word frequenct vector 
+\end{DoxyVerb}
+ 
+
+Definition at line 48 of file dict\+\_\+functions.\+py.
+
+\index{dict\+\_\+functions@{dict\+\_\+functions}!format\+\_\+text@{format\+\_\+text}}
+\index{format\+\_\+text@{format\+\_\+text}!dict\+\_\+functions@{dict\+\_\+functions}}
+\subsubsection[{\texorpdfstring{format\+\_\+text(text\+\_\+line)}{format_text(text_line)}}]{\setlength{\rightskip}{0pt plus 5cm}def dict\+\_\+functions.\+format\+\_\+text (
+\begin{DoxyParamCaption}
+\item[{}]{text\+\_\+line}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedict__functions_adaacb8f2bf31cd2d1532598c788974c3}{}\label{namespacedict__functions_adaacb8f2bf31cd2d1532598c788974c3}
+\begin{DoxyVerb}Function name : format_text
+Input arguments :
+    1. string text_line : Piece of text
+Purpose : To format the text by removing delimiters and trailing whitespaces
+Return Value : The formatted string.
+\end{DoxyVerb}
+ 
+
+Definition at line 35 of file dict\+\_\+functions.\+py.
+
+\index{dict\+\_\+functions@{dict\+\_\+functions}!remove\+\_\+delimiters@{remove\+\_\+delimiters}}
+\index{remove\+\_\+delimiters@{remove\+\_\+delimiters}!dict\+\_\+functions@{dict\+\_\+functions}}
+\subsubsection[{\texorpdfstring{remove\+\_\+delimiters(text\+\_\+line)}{remove_delimiters(text_line)}}]{\setlength{\rightskip}{0pt plus 5cm}def dict\+\_\+functions.\+remove\+\_\+delimiters (
+\begin{DoxyParamCaption}
+\item[{}]{text\+\_\+line}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedict__functions_a49acb876cdee9d72c58256b23fbc15e5}{}\label{namespacedict__functions_a49acb876cdee9d72c58256b23fbc15e5}
+\begin{DoxyVerb}Function name : remove_delimiters
+Input arguments :
+    1. string text_line : Piece of text
+Purpose : To remove unnecessary characters 
+Return Value : The string after removing characters.
+\end{DoxyVerb}
+ 
+
+Definition at line 22 of file dict\+\_\+functions.\+py.
+
+\index{dict\+\_\+functions@{dict\+\_\+functions}!text\+\_\+formatting@{text\+\_\+formatting}}
+\index{text\+\_\+formatting@{text\+\_\+formatting}!dict\+\_\+functions@{dict\+\_\+functions}}
+\subsubsection[{\texorpdfstring{text\+\_\+formatting(my\+\_\+dictionary)}{text_formatting(my_dictionary)}}]{\setlength{\rightskip}{0pt plus 5cm}def dict\+\_\+functions.\+text\+\_\+formatting (
+\begin{DoxyParamCaption}
+\item[{}]{my\+\_\+dictionary}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedict__functions_abb4baa4822ccfeb9ec8c59b7acb7ee3b}{}\label{namespacedict__functions_abb4baa4822ccfeb9ec8c59b7acb7ee3b}
+\begin{DoxyVerb}Function name : inner_product
+Input arguments :
+    1. dictionary my_dictionary : The dictionary to be formatted
+Purpose : To remove the words which have very less importance to the meaning.
+Return Value : The modified dictionary. 
+\end{DoxyVerb}
+ 
+
+Definition at line 83 of file dict\+\_\+functions.\+py.
+
+
+
+\subsection{Variable Documentation}
+\index{dict\+\_\+functions@{dict\+\_\+functions}!delimiters@{delimiters}}
+\index{delimiters@{delimiters}!dict\+\_\+functions@{dict\+\_\+functions}}
+\subsubsection[{\texorpdfstring{delimiters}{delimiters}}]{\setlength{\rightskip}{0pt plus 5cm}string dict\+\_\+functions.\+delimiters = \char`\"{}\textbackslash{}\textquotesingle{}\textbackslash{}\char`\"{}/$<$?$>$,.\+:$\ast$-\/+\textbackslash{}\textbackslash{}=`$\sim$!@\#$^\wedge$\&()\+\_\+ ;\{\}\mbox{[}$\,$\mbox{]}$\vert$\char`\"{}}\hypertarget{namespacedict__functions_a5b7d5eaf2a87a18bae901c297cd2f249}{}\label{namespacedict__functions_a5b7d5eaf2a87a18bae901c297cd2f249}
+
+
+Definition at line 17 of file dict\+\_\+functions.\+py.
+
