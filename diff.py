@@ -14,7 +14,7 @@ import os
 import operator
 import time
 # @param delimiter character to differentiate words
-delimiters = "\'\"/<?>,.:*-+\\=`~!@#^&()_ ;"
+delimiters = "\'\"/<?>,.:*-+\\=`~!@#^&()_ ;{}[]|"
 
 
 # Dictionary that contains words present in all the files of the folder.
@@ -43,7 +43,7 @@ def format_text(text_line):
     """
 	text_line = text_line.rstrip()
 	text_line = remove_delimiters(text_line)
-
+	text_line = text_line.replace("\t", ";")
 	return text_line.split(';')
 
 
@@ -71,10 +71,6 @@ def create_dictionary(file_path):
 	text_document.close()
 
 	for key in my_dictionary.keys():
-		if key != '' and key not in document_word_count:
-			document_word_count[key] = 1
-		elif key in document_word_count:
-			document_word_count[key] += 1
 		my_dictionary[key] /= (len(my_dictionary.keys()) * 1.0)
 
 	return my_dictionary
@@ -151,6 +147,14 @@ if __name__ == "__main__":
 	for filename in os.listdir(folder_path):# Create the word vector for each and every file in the folder
 		document_dictionary[filename] = create_dictionary(folder_path + filename)
 
+	dict_file = open('dict.txt','r')
+	for text_line in dict_file:
+		text_line = text_line.rstrip()
+		text_line_divided = text_line.split(' ')
+
+		document_word_count[text_line_divided[0]] = int(text_line_divided[1])
+
+	dict_file.close()
 	for filename in os.listdir(folder_path):# Calculating the tf-idf weights
 		temp_dictionary = {}
 
